@@ -1,0 +1,917 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"backgr",
+				"background-image"
+			],
+			[
+				"biw",
+				"biweek_cal"
+			],
+			[
+				"date",
+				"date_input"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"m",
+				"margin-left"
+			],
+			[
+				"p",
+				"padding-left"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"r",
+				"recur_options"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"bord",
+				"border-top-style"
+			],
+			[
+				"f",
+				"float"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"bor",
+				"border-right"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"im",
+				"images"
+			],
+			[
+				"backgrou",
+				"background-image"
+			],
+			[
+				"border-r",
+				"border-right-width"
+			],
+			[
+				"backg",
+				"background-position"
+			],
+			[
+				"border-to",
+				"border-top-right-radius"
+			],
+			[
+				"back",
+				"background-position"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"fo",
+				"font-style"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"ba",
+				"background-size"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"t",
+				"text-decoration"
+			],
+			[
+				"g",
+				"rgba()"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"fi",
+				"findMatchingLinkIndex(url, list)"
+			],
+			[
+				"bu",
+				"buttonOn	(bool)"
+			],
+			[
+				"view",
+				"view_anyways"
+			],
+			[
+				"nuke",
+				"nuke_overlay"
+			],
+			[
+				"blammed",
+				"blammedText	(?)"
+			],
+			[
+				"o",
+				"opacity"
+			],
+			[
+				"ap",
+				"appendChild"
+			],
+			[
+				"but",
+				"button	{}"
+			],
+			[
+				"list",
+				"listName	(?)"
+			],
+			[
+				"li",
+				"linkIndex	(num)"
+			],
+			[
+				"bla",
+				"black_list	[]"
+			],
+			[
+				"butt",
+				"buttonOn	(bool)"
+			],
+			[
+				"black",
+				"black_list	{}"
+			],
+			[
+				"bl",
+				"black_list	(?)"
+			],
+			[
+				"sq",
+				"squareButton"
+			],
+			[
+				"pad",
+				"padStates	(?)"
+			],
+			[
+				"la",
+				"lastYHit"
+			],
+			[
+				"l",
+				"lastXHit"
+			],
+			[
+				"drum",
+				"drumHitsData	(?)"
+			],
+			[
+				"drumP",
+				"drumPageUpdateSoloLED(trackNum)"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"squ",
+				"squareButton	(?)"
+			],
+			[
+				"condu",
+				"conductorUpdateMuteLED(trackNum)"
+			],
+			[
+				"setP",
+				"setPadLEDFromXY(x, y, color)"
+			],
+			[
+				"setCor",
+				"setPadLEDFromXY(x, y, color)"
+			],
+			[
+				"dev",
+				"deviceNum	(num)"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"show",
+				"showConductorPage()"
+			],
+			[
+				"MAX",
+				"MAX_MODABLE_MACROS	(num)"
+			],
+			[
+				"MAX_M",
+				"MAX_MODABLE_SENDS	(num)"
+			],
+			[
+				"trua",
+				"trackNum	(?)"
+			],
+			[
+				"curre",
+				"currentPage	(str)"
+			],
+			[
+				"track",
+				"trackNum	(?)"
+			],
+			[
+				"CU",
+				"CONDUCTOR_PAGE	(str)"
+			],
+			[
+				"v",
+				"velocity	(num)"
+			],
+			[
+				"C",
+				"CLIP_PAGE	(str)"
+			],
+			[
+				"da",
+				"data1	(?)"
+			],
+			[
+				"pd",
+				"padNum	(?)"
+			],
+			[
+				"new",
+				"newVelocity	(num)"
+			],
+			[
+				"TH",
+				"THRESH_PAD_MIN	(num)"
+			],
+			[
+				"upda",
+				"updateCorners"
+			],
+			[
+				"PD",
+				"PAD_CORNER_WIDTH	(num)"
+			],
+			[
+				"tryAs",
+				"tryAsMidiCornerTrigger(midiNum, velocity)"
+			],
+			[
+				"vel",
+				"velocity"
+			],
+			[
+				"en",
+				"ensureRange(value, min, max)"
+			],
+			[
+				"light",
+				"lightPad"
+			],
+			[
+				"x",
+				"xPos"
+			],
+			[
+				"y",
+				"yPos"
+			],
+			[
+				"midi",
+				"midiOutNum"
+			],
+			[
+				"press",
+				"pressure"
+			],
+			[
+				"cor",
+				"cornerIndex	(num)"
+			],
+			[
+				"cur",
+				"currentCornerValues	(?)"
+			],
+			[
+				"re",
+				"releaseAllHeldSolos()"
+			],
+			[
+				"setTo",
+				"setSoloToggleHeld(trackNum, held)"
+			],
+			[
+				"tra",
+				"track	(num)"
+			],
+			[
+				"tackS",
+				"trackSolos	(?)"
+			],
+			[
+				"SO",
+				"SOLO_OFF	(str)"
+			],
+			[
+				"SOLO",
+				"SOLO_ON	(str)"
+			],
+			[
+				"tr",
+				"trackSolos	(?)"
+			],
+			[
+				"sho",
+				"showTrackSettings(t)"
+			],
+			[
+				"S",
+				"SOLO_ON	(str)"
+			],
+			[
+				"set",
+				"setToMe	(?)"
+			],
+			[
+				"trackS",
+				"trackSolos	(?)"
+			],
+			[
+				"mod",
+				"modButton2	(str)"
+			],
+			[
+				"num",
+				"numTracksArmed	(num)"
+			],
+			[
+				"pr",
+				"previouslyMultiArmed	(bool)"
+			],
+			[
+				"REC",
+				"RECORDING_OFF	(str)"
+			],
+			[
+				"RE",
+				"RECORDING_NOW	(str)"
+			],
+			[
+				"beat",
+				"beatPosition	(num)"
+			],
+			[
+				"nex",
+				"nextTrack	(num)"
+			],
+			[
+				"nu",
+				"numTracksArmed	(num)"
+			],
+			[
+				"s",
+				"status	(str)"
+			],
+			[
+				"send",
+				"sendPadHitToBitwig(padNum, velocity)"
+			],
+			[
+				"within",
+				"within1Over32OfMeasureStart	(bool)"
+			],
+			[
+				"sel",
+				"selectedTrack	(num)"
+			],
+			[
+				"D",
+				"DRUM_PAGE	(?)"
+			],
+			[
+				"tryAsSC",
+				"tryAsSceneScrollData(data1, data2)"
+			],
+			[
+				"max",
+				"maxCorner	(num)"
+			],
+			[
+				"lig",
+				"lightAmountsForThumbzSymbol	(?)"
+			],
+			[
+				"vol",
+				"volumeSlides	[]"
+			],
+			[
+				"curr",
+				"currentlyPlaying	(bool)"
+			],
+			[
+				"get",
+				"getTrackFromBank(trackNum)"
+			],
+			[
+				"n",
+				"noteNum	(num)"
+			],
+			[
+				"TR",
+				"TRACK_BANKS	[]"
+			],
+			[
+				"ne",
+				"nextTrack	(num)"
+			],
+			[
+				"sele",
+				"selectedTrack	(num)"
+			],
+			[
+				"R",
+				"RECORDING_CLOSED	(str)"
+			],
+			[
+				"selec",
+				"selectTrackFromBank(trackNum)"
+			],
+			[
+				"getC",
+				"getCornerFromMidiNum(midiNum)"
+			],
+			[
+				"padH",
+				"padHeld(padNum)"
+			],
+			[
+				"cea",
+				"clearPadLEDS()"
+			],
+			[
+				"showT",
+				"showTrackSettings(trackNum)"
+			],
+			[
+				"to",
+				"totalScenesAvailable	(num)"
+			],
+			[
+				"w",
+				"widthScenes	(num)"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "pack",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Pac",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Misty/Code/Web/mistynickle.github.io"
+	],
+	"file_history":
+	[
+		"/Users/Misty/Github/Bebe/settings/contact.html",
+		"/Users/Misty/Github/Bebe/home.html",
+		"/Users/Misty/Github/Bebe/banking/transfer.html",
+		"/Users/Misty/Github/Bebe/banking/sendMoneyTo.html",
+		"/Users/Misty/Github/Bebe/phone.css",
+		"/Users/Misty/Github/Bebe/settings/changePass.html",
+		"/Users/Misty/Github/Bebe/banking/transferComplete.html",
+		"/Users/Misty/Github/Bebe/banking/sendMoney.html",
+		"/Users/Misty/Github/Bebe/bebe.sublime-project",
+		"/Users/Misty/.Trash/phone.css",
+		"/Users/Misty/Github/Bebe/payComplete.html",
+		"/Users/Misty/Github/Bebe/sendMoneyTo.html",
+		"/Users/Misty/Github/Bebe/transfer.html",
+		"/Users/Misty/Github/Bebe/sendMoney.html",
+		"/Users/Misty/Github/Bebe/depositComplete.html",
+		"/Users/Misty/Github/Bebe/checking.html",
+		"/Users/Misty/Github/Bebe/transferComplete.html",
+		"/Users/sjaromin/Projects/Code/Web/Black Lister/black_list.html",
+		"/Users/sjaromin/Projects/Code/Web/Black Lister/manifest.json",
+		"/Users/sjaromin/Projects/Code/Web/Black Lister/modify_css.js",
+		"/Users/sjaromin/Projects/Code/Web/Black Lister/black_lister.css",
+		"/Users/sjaromin/Projects/Code/Web/Black Lister/popup.js",
+		"/Users/sjaromin/Projects/Code/Web/Black Lister/popup.html",
+		"/Users/sjaromin/Projects/Code/Web/Black Lister/help.html",
+		"/Users/sjaromin/Projects/Code/Web/Black Lister/the_crap.html",
+		"/Users/sjaromin/Projects/Code/Web/Black Lister/popup.css",
+		"/Users/sjaromin/Projects/Code/Web/Black Lister/list_tools.js",
+		"/Users/sjaromin/Projects/Code/Web/Black Lister/black_list.js",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/options.js",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/modify_css.js",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/big_options.html",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/options.css",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/ImprovisationPlugin/BitwigInterface.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/ImprovisationPlugin/DrumPage.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/ImprovisationPlugin/QUNEO_init.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/ImprovisationPlugin/HelperClasses.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/ImprovisationPlugin/BitwigObservers.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/ImprovisationPlugin/ClipPage.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/ImprovisationPlugin/ConductorPage.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/ImprovisationPlugin/DeviceControls.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/ImprovisationPlugin/QuneoConstants.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/ImprovisationPlugin/ImprovPlugin.control.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/ImprovisationPlugin/eImprov_Instructions.txt",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/ImprovisationPlugin/Observers.js",
+		"/Users/sjaromin/Desktop/FUHum.txt",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/ImprovisationPlugin/Flair.js",
+		"/Users/sjaromin/Desktop/oena.txt",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/ImprovisationPlugin/TempoTools.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Set Aside Controller Scripts/QUNEO_Script/QUNEO_clips.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/ImprovisationPlugin/ImprovPlugin.sublime-project",
+		"/Users/sjaromin/Documents/Bitwig Studio/Set Aside Controller Scripts/QUNEO_Script/QUNEO_notes.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/Tests/volumeControlTest.control.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Set Aside Controller Scripts/QUNEO_Script/QUNEO.control.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Set Aside Controller Scripts/QUNEO_Script/QUNEO_functions.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/ImprovisationPlugin/12Step_init.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/QUNEO_Script/QUNEO_notes.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/QUNEO_Script/QUNEO.control.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/QUNEO_Script/QUNEO_parameterPage.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/QUNEO_Script/QUNEO_clips.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Set Aside Controller Scripts/ImprovisationPlugin/ImprovPlugin.control.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Set Aside Controller Scripts/ImprovisationPlugin/QUNEO_init.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Set Aside Controller Scripts/ImprovisationPlugin/12Step_init.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/QUNEO_Script/QUNEO_functions.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Set Aside Controller Scripts/QUNEO_Script/QUNEO_pages.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/ImprovisationPlugin/ImprovPlugin12Step.control.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Set Aside Controller Scripts/QUNEO_Script/QUNEO_parameterPage.js",
+		"/Users/sjaromin/Documents/Bitwig Studio/Controller Scripts/ImprovisationPlugin/SephReed-ImprovPlugin.js",
+		"/Users/sjaromin/Projects/Code/Web/ImprovisationPlugin/SephReed-ImprovPlugin.js",
+		"/Users/sjaromin/Projects/Code/Web/Black Lister/bg.js",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/manifest.json",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/popup.js",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/bg.js",
+		"/Users/sjaromin/Projects/Code/Web/The Dark Side/hack_colors.js",
+		"/Users/sjaromin/Projects/Code/Web/The Dark Side/manifest.json",
+		"/Users/sjaromin/Projects/Code/Web/Black Lister/test.css",
+		"/Users/sjaromin/Projects/Code/Web/Maintain Focus/Options.html",
+		"/Applications/My Apps/Programming/Sublime Text.app/Contents/MacOS/changelog.txt",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/initialize_theme_list.js",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/finalize.css",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/options.html",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/defaults_css/mob.css",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/defaults_css/clean.css",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/defaults_css/gothic.css",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/defaults_css/hotel_lima.css",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/defaults_css/playa_prince.css",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/defaults_css/marbles.css",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/defaults_css/calm_city.css",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/defaults_css/fakebook.css",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/defaults_css/moose_knuckle.css",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/hidden_elements.html",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/hidden_elements.js",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/defaults_css/lol.css",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/defaults_css/ugly.css",
+		"/Users/sjaromin/Projects/Code/Web/fakebook/initialize.css",
+		"/Applications/My Apps/Music/Bitwig Studio.app/Contents/Resources/ControlSurfaceScripts/KMI/QUNEO/QUNEO_functions.js",
+		"/Applications/My Apps/Music/Bitwig Studio.app/Contents/Resources/ControlSurfaceScripts/KMI/QUNEO/QUNEO_notes.js",
+		"/Applications/My Apps/Music/Bitwig Studio.app/Contents/Resources/ControlSurfaceScripts/KMI/QUNEO/QUNEO_pages.js",
+		"/Applications/My Apps/Music/Bitwig Studio.app/Contents/Resources/ControlSurfaceScripts/KMI/QUNEO/QUNEO.control.js",
+		"/Applications/My Apps/Music/Bitwig Studio.app/Contents/Resources/ControlSurfaceScripts/KMI/QUNEO/QUNEO_parameterPage.js",
+		"/Users/sjaromin/Projects/Code/GoLang/src/github.com/coopernurse/gorp/gorp.go",
+		"/Users/sjaromin/Projects/Code/GoLang/src/github.com/ScottJaromin/thumbzart/app/controllers/gorp.go",
+		"/Users/sjaromin/Projects/Code/GoLang/src/github.com/ScottJaromin/thumbzart/app/models/post.go",
+		"/Users/sjaromin/Projects/Code/GoLang/src/github.com/ScottJaromin/thumbzart/app/controllers/app.go",
+		"/Users/sjaromin/Projects/Code/GoLang/src/github.com/revel/revel/samples/booking/app/controllers/app.go",
+		"/Users/sjaromin/Projects/Code/GoLang/src/github.com/ScottJaromin/thumbzart/app/models/test.go",
+		"/Users/sjaromin/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/sjaromin/Desktop/revel.command",
+		"/Users/sjaromin/Projects/Code/GoLang/src/github.com/ScottJaromin/thumbzart/app/routes/routes.go",
+		"/Users/sjaromin/Projects/Code/GoLang/src/github.com/revel/revel/samples/booking/app/routes/routes.go",
+		"/Users/sjaromin/Projects/Code/GoLang/src/github.com/ScottJaromin/thumbzart/conf/routes",
+		"/Users/sjaromin/Projects/Code/GoLang/src/github.com/ScottJaromin/thumbzart/app/views/App/base.html",
+		"/Users/sjaromin/Projects/Code/GoLang/src/github.com/ScottJaromin/thumbzart/app/views/App/blog_parser.html",
+		"/Users/sjaromin/Projects/Code/GoLang/src/github.com/ScottJaromin/thumbzart/public/css/base.css",
+		"/Users/sjaromin/Projects/Code/GoLang/src/github.com/ScottJaromin/thumbzart/app/init.go",
+		"/Users/sjaromin/Projects/Code/GoLang/src/github.com/ScottJaromin/thumbzart/app/views/App/navbar.html",
+		"/Users/sjaromin/Projects/Code/GoLang/src/github.com/ScottJaromin/thumbzart/app/views/App/theming.html",
+		"/Users/sjaromin/Projects/Code/GoLang/src/thumbzart/app/views/App/Index.html",
+		"/Users/sjaromin/Projects/Code/Web/ThumbzArt/portfolio/thumbzart/views.py",
+		"/Users/sjaromin/Projects/Code/Web/ThumbzArt/portfolio/thumbzart/themer.py",
+		"/Users/sjaromin/Projects/Code/GoLang/src/github.com/ScottJaromin/thumbzart/app/views/App/lorem_ipsum.html",
+		"/Users/sjaromin/Projects/Code/GoLang/src/thumbzart/app/views/App/base.html",
+		"/Users/sjaromin/Projects/Code/GoLang/src/github.com/revel/revel/samples/booking/app/controllers/hotels.go",
+		"/Users/sjaromin/Projects/Code/GoLang/src/github.com/ScottJaromin/thumbzart/app/controllers/themer.go",
+		"/Users/sjaromin/Projects/Code/GoLang/src/thumbzart/app/controllers/app.go",
+		"/Users/sjaromin/Projects/Code/GoLang/src/thumbzart/app/views/header.html",
+		"/Users/sjaromin/Projects/Code/GoLang/src/github.com/revel/revel/template.go",
+		"/Users/sjaromin/Projects/Code/GoLang/src/thumbzart/app/views/App/welcome.html",
+		"/Users/sjaromin/Projects/Code/GoLang/src/thumbzart/conf/routes"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"back",
+			"white",
+			"ID",
+			"button",
+			"releaseAll",
+			"getTrackfromBank(selectedTrack)",
+			"allSee",
+			"allSeeingTrackBank.getTrack(selectedTrack)",
+			"allSee",
+			".track",
+			"widthScenes",
+			"width",
+			"SELECTED_TRACK",
+			"allSee",
+			"MAX_SCENES",
+			"trackVo",
+			"solo",
+			"PadHitData",
+			"padHitsData",
+			"setPa",
+			"switc",
+			"queue for",
+			"attempting",
+			"tryReleasingHeldPadNotes",
+			"B2",
+			"A1",
+			"B1",
+			"TOTAL_SEN",
+			"diamondHeld",
+			"squareHeld",
+			"imes",
+			"dia",
+			"squareHeld",
+			"getC",
+			"lastVal",
+			"ArmOb",
+			"satus",
+			"pageAutoSwitch =",
+			"currentlyReco",
+			"record",
+			"pageAu",
+			" padIndex",
+			"padIndex",
+			"cornerRelationships",
+			"currentHeldPads",
+			"showC",
+			"print",
+			"selectedT",
+			"(\"+",
+			"current",
+			"relightAllTrackControls",
+			"print",
+			" \n",
+			"{\n",
+			";\n",
+			"var spinner = value - value%64;  ",
+			"		\n",
+			"46",
+			"}\n",
+			" \n",
+			"value",
+			"getGridObserverFunc",
+			"padNumFromNW\n",
+			"}\n",
+			"play",
+			"== ",
+			"quneoPortNames\nquneoPortNames\nportNames",
+			"}\n",
+			"need",
+			"5px             \n",
+			"                \n",
+			"                    \n",
+			"muta",
+			"ufiad",
+			"background-im",
+			"isChecked",
+			"transa",
+			"transient",
+			"colmap"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"getTrackFromBank(selectedTrack)",
+			"getTrackfromBank(selectedTrack)",
+			"MAX_SCENES",
+			"selectedTrack",
+			"DrumPadHitData",
+			"drumHitsData",
+			"tryReleasingStalledPadNotes",
+			"Jerry",
+			"Tom",
+			"A1",
+			"modButton1",
+			"modButton2",
+			"alt_1State",
+			"diamondHeld",
+			" cornerIndex",
+			"cornerIndex",
+			"CORNER_RELATIONSHIPS",
+			"currentCornerValues",
+			"createGridObserver",
+			"quneoPortNames"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "mistynickle.github.io.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 222.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
