@@ -1,0 +1,289 @@
+<body>
+	<div id="header_image"></div>
+	<div>
+		<h1>Short Bio</h1>
+		<p>Lorem Ipsum</p>
+	</div>
+
+	<div>
+		<h1>Work History</h1>
+		<p>Lorem Ipsum</p>
+	</div>
+
+	<div>
+		<h1>Volunteering</h1>
+		<p>Lorem Ipsum</p>
+	</div>
+</body>
+
+
+
+<!-- Given something like text above, the goal is to create padding in each of
+the sections (Short Bio, Work History, and Volunteering).  There are many scopes in which
+these sections live, and choosing the right scope can done many ways.  Below are a few: -->
+
+
+
+
+
+
+
+
+
+<!-- Style: cracking a nut with a sledgehammer
+Pros: none, don't do this
+Cons: overrides all divs, offers no scope
+-->
+
+<style>
+#header_image { /*stuff*/ }
+
+div {
+	padding: 10px;
+}
+
+</style>
+
+
+<body>
+	<div id="header_image"></div>
+	<div>
+		<h1>Short Bio</h1>
+		<p>Lorem Ipsum</p>
+	</div>
+
+	<div>
+		<h1>Work History</h1>
+		<p>Lorem Ipsum</p>
+	</div>
+
+	<div>
+		<h1>Volunteering</h1>
+		<p>Lorem Ipsum</p>
+	</div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Style: Using what has already been defined (assuming immediate child) 
+Pros: quick, can be done without acess to code
+Cons: can easily be broken by inserting a parent between body and div
+-->
+
+<style>
+#header_image { /*stuff*/ }
+
+body > div {
+	padding: 10px;
+}
+
+</style>
+
+
+<body>
+	<div id="header_image"></div>
+	<div>
+		<h1>Short Bio</h1>
+		<p>Lorem Ipsum</p>
+	</div>
+
+	<div>
+		<h1>Work History</h1>
+		<p>Lorem Ipsum</p>
+	</div>
+
+	<div>
+		<h1>Volunteering</h1>
+		<p>Lorem Ipsum</p>
+	</div>
+</body>
+
+
+
+
+
+
+
+<!-- Style: Using what has already been defined 
+Pros: specific, easy to read, won't break
+Cons: can easily lead to information overload, not all padded things are symbolicaly similar
+-->
+
+<style>
+#header_image { /*stuff*/ }
+
+.padded {
+	padding: 10px;
+}
+
+</style>
+
+
+<body>
+	<div id="header_image"></div>
+	<div class="padded">
+		<h1>Short Bio</h1>
+		<p>Lorem Ipsum</p>
+	</div>
+
+	<div class="padded">
+		<h1>Work History</h1>
+		<p>Lorem Ipsum</p>
+	</div>
+
+	<div class="padded">
+		<h1>Volunteering</h1>
+		<p>Lorem Ipsum</p>
+	</div>
+</body>
+
+
+
+
+
+
+
+<!-- Style: class and group 
+Pros: specific, easy to read, won't break
+Cons: issues can arise if you want to add a div to .padded parent, without inheriting attributes
+-->
+
+<style>
+#header_image { /*stuff*/ }
+
+.padded_children > div {
+	padding: 10px;
+}
+
+</style>
+
+
+<body class="padded_children">
+	<div id="header_image"></div>
+	<div>
+		<h1>Short Bio</h1>
+		<p>Lorem Ipsum</p>
+	</div>
+
+	<div>
+		<h1>Work History</h1>
+		<p>Lorem Ipsum</p>
+	</div>
+
+	<div>
+		<h1>Volunteering</h1>
+		<p>Lorem Ipsum</p>
+	</div>
+</body>
+
+
+
+
+
+
+
+
+
+<!-- Style: custom tagname
+Pros: specific, easy to read, won't break
+Cons: custom tags have to be defined (display: block), Edge support, but not IE
+-->
+
+<style>
+#header_image { /*stuff*/ }
+
+section {
+	display: block;
+	padding: 10px;
+}
+
+</style>
+
+
+<body>
+	<div id="header_image"></div>
+	<section>
+		<h1>Short Bio</h1>
+		<p>Lorem Ipsum</p>
+	</section>
+
+	<section>
+		<h1>Work History</h1>
+		<p>Lorem Ipsum</p>
+	</section>
+
+	<section>
+		<h1>Volunteering</h1>
+		<p>Lorem Ipsum</p>
+	</section>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Style: custom tagname w/ css variable (advanced)
+Pros: specific, easy to read, won't break, easy to update
+Cons: new to modern browsers (last 2 years at most)
+-->
+
+<style>
+#header_image { /*stuff*/ }
+
+body {
+	--textPadding: 10px;
+}
+
+section {
+	display: block;
+	padding: var(--textPadding);
+}
+
+</style>
+
+
+<body>
+	<div id="header_image"></div>
+	<section>
+		<h1>Short Bio</h1>
+		<p>Lorem Ipsum</p>
+	</section>
+
+	<section>
+		<h1>Work History</h1>
+		<p>Lorem Ipsum</p>
+	</section>
+
+	<section>
+		<h1>Volunteering</h1>
+		<p>Lorem Ipsum</p>
+	</section>
+</body>
+
+
+
+
+
+
+
