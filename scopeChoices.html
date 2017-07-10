@@ -36,7 +36,7 @@ Cons: overrides all divs, offers no scope
 -->
 
 <style>
-#header_image { /*stuff*/ }
+#header_image { /*code about various attributes, such as background: gray;*/ }
 
 div {
 	padding: 10px;
@@ -80,12 +80,12 @@ Cons: can easily be broken by inserting a parent between body and div
 -->
 
 <style>
-#header_image { /*stuff*/ }
+#header_image { /*code about various attributes, such as background: gray;*/ }
 
-body > div {
+body > div { 
 	padding: 10px;
 }
-
+/*In this example (code above), "body > div" means 'only apply this to these first level divs'*/
 </style>
 
 
@@ -115,11 +115,11 @@ body > div {
 
 <!-- Style: Using what has already been defined 
 Pros: specific, easy to read, won't break
-Cons: can easily lead to information overload, not all padded things are symbolicaly similar
+Cons: can easily lead to information overload, not all padded things are symbolically similar
 -->
 
 <style>
-#header_image { /*stuff*/ }
+#header_image { /*code about various attributes, such as background: gray;*/ }
 
 .padded {
 	padding: 10px;
@@ -158,7 +158,7 @@ Cons: issues can arise if you want to add a div to .padded parent, without inher
 -->
 
 <style>
-#header_image { /*stuff*/ }
+#header_image { /*code about various attributes, such as background: gray;*/ }
 
 .padded_children > div {
 	padding: 10px;
@@ -172,6 +172,7 @@ Cons: issues can arise if you want to add a div to .padded parent, without inher
 	<div>
 		<h1>Short Bio</h1>
 		<p>Lorem Ipsum</p>
+		<div></div>
 	</div>
 
 	<div>
@@ -199,7 +200,7 @@ Cons: custom tags have to be defined (display: block), Edge support, but not IE
 -->
 
 <style>
-#header_image { /*stuff*/ }
+#header_image { /*code about various attributes, such as background: gray;*/ }
 
 section {
 	display: block;
@@ -249,7 +250,7 @@ Cons: new to modern browsers (last 2 years at most)
 -->
 
 <style>
-#header_image { /*stuff*/ }
+#header_image { /*code about various attributes, such as background: gray;*/ }
 
 body {
 	--textPadding: 10px;

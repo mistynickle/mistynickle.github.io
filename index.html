@@ -31,6 +31,46 @@
 
 			}
 
+			#NavBar {
+				/*text-align: right;*/
+			}
+
+				#NavBarRight{
+					display: inline-block;
+					position: absolute;
+					right: 0px;
+				}
+
+				#NavBar a {
+					color: #333;
+					text-decoration: none; 
+					border:none;
+					padding: 10px;
+					border-right:none;
+					transition: all ease 0.5s;
+				}
+		
+				#NavBar a:hover {
+					color: white;
+					background-color: #7958d8
+				}
+
+				#NavBar a:active {
+					animation: wooWoo 1.5s ease;
+				}
+
+
+				@keyframes wooWoo {
+					0%, 100% {
+						background-color: #7958d8;
+						color: white;
+					}
+					50% {
+						background-color: white;
+						color: #7958d8;	
+					}
+				}
+
 
 
 
@@ -47,12 +87,23 @@
 
 <!-- THIS IS A NOTE IN HTML -->
 <body>
+<!-- MASTER COPY NAV BAR -->
+	<div id= NavBar>
+		<b>Misty Nickle</b>
+
+		<div id="NavBarRight">
+			<a href="#">About</a><!-- 
+			--><a href="#">Portfolio</a><!-- 
+			--><a href="#">Resume</a><!-- 
+			--><a href="#">Contact</a></div>
+	</div>
+
 	<div id="header_image">		
 	</div>
 
 
 	<div>
-		<h1>Misty Nickle</h1>
+		<h1>Interaction Designer</h1>
 		<p>
 			I made a website <b>Woo!</b>
 		</p>
