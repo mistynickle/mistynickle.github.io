@@ -2,30 +2,57 @@
 <html>
 <head>
 	<title>Misty Nickle</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- THIS AREA BELOW IS FOR SOME BASIC CSS -->
 	<style>
 	/*THIS IS A NOTE IN CSS*/
 
+/*In order to show your font, insert this code with the respective font names and file locations*/
+@font-face { 
+    font-family: Nunito; 
+    src: url(public/fonts/Nunito/Nunito-Regular.ttf);
+  } 
 
 
-	html {
-	 	box-sizing: border-box;
+ @font-face { 
+    font-family: Nunito; 
+    src: url(public/fonts/Nunito/Nunito-Bold.ttf);
+    font-weight: bold; 
+  } 
+
+
+
+
+	body {
+		box-sizing: border-box;
 	}
 
-	*, *:before, *:after {
+	* {
 	  	box-sizing: inherit;
-	  	/*margin: 0px;*/
-		/*padding: 0px;*/
-		/*background-size: contain;*/
-		/*background-position: center center;*/
-		/*background-repeat: no-repeat;*/
+	  	margin: 0px;
+		padding: 0px;
+		background-size: contain;
+		background-position: center center;
+		background-repeat: no-repeat;
 	}
 
 	html, body {
-		/*position: relative;*/
-		/*min-height: 100vh;*/
-		/*width: 100%;*/
+		position: relative;
+		min-height: 100vh;
+		min-width: 100vw;
 	}
+
+
+
+
+
+	/*
+	Uncomment when understood
+
+
+	*, *:before, *:after {
+
+	}*/
 
 
 
@@ -39,7 +66,7 @@
 
 		body {
 			color: #333;
-			font-family: arial;
+			font-family: Nunito, arial;
 			background-color: #d3d3d3;
 			margin:0px;
 
@@ -67,14 +94,17 @@
 					display: inline-block;
 					position: absolute;
 					right: 0px;
+					top: 0px;
 				}
 
 				#NavBar a {
 					color: #333;
 					text-decoration: none; 
-					border:none;
+					text-align: center;
 					padding: 10px;
 					border-right:none;
+					width: 100px;
+					display: inline-block;
 					transition: all ease 0.5s;
 				}
 		
@@ -101,6 +131,16 @@
 
 
 
+/*RESPONSIVE STYLING GOES HERE...  SEPARATE FOR MOBILE, TABLET, ETC*/
+	@media all and (max-width: 400px) {
+	    /*styles for narrow desktop browsers and iPad landscape */
+	    #NavBar a {
+	        width: 25%;
+	    }    
+
+
+
+	}
 
 
 	</style>
@@ -137,6 +177,8 @@
 		</p>
 		
 	</div>
+
+	<!-- <div style="position: absolute; bottom: 0px">FOOOTER</div> -->
 </body>
 
 </html>
