@@ -1,0 +1,210 @@
+	/*THIS IS A NOTE IN CSS*/
+
+/*In order to show your font, insert this code with the respective font names and file locations*/
+@font-face { 
+    font-family: Nunito; 
+    src: url(public/fonts/Nunito/Nunito-Regular.ttf);
+  } 
+
+
+ @font-face { 
+    font-family: Nunito; 
+    src: url(public/fonts/Nunito/Nunito-Bold.ttf);
+    font-weight: bold; 
+  } 
+
+
+
+
+	body {
+		box-sizing: border-box;
+	}
+
+	* {
+	  	box-sizing: inherit;
+	  	margin: 0px;
+		padding: 0px;
+		background-size: contain;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+
+	html, body {
+		position: relative;
+		min-height: 100vh;
+		min-width: 100vw;
+	}
+
+	.padded {
+		padding:10px;
+	}
+
+	.button {
+		  font: bold 16px Nunito; arial;
+	      text-align: center;
+		  text-decoration: none;
+		  background-color: #61a0a5;
+		  color: #333333;
+		  padding: 6px 30px 6px 30px;
+		  border-radius: 4px;
+		  display: inline-block;
+
+
+		  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+
+	}
+
+	.purplehover a:hover {
+		background-color: #7958d8;
+		color: white;
+
+	}
+
+
+
+
+
+
+
+		* {
+			/*border: 1px solid rgba(0,0,0,0.5);*/
+		}
+
+		body {
+			margin:0px;	
+			font-family: Nunito, arial;		
+			color: #333;
+			background-color: #d3d3d3;
+
+		}
+
+/*
+EXAMPLE CODE ORDER
+			#IDName {
+				display: inline-block;
+
+				position: absolute;
+				z-index:3; <- how forward something is... (ie; 3 is in front of 2 -- only works on relative, absolute, and fixed position)
+				top: 0px;
+				left: 0px;
+				right: 0px;
+				bottom: 0px;
+				height: 100%;
+				width: 100%;
+			
+				padding: 0px;
+				margin: 0px;
+
+				font-family: arial;
+				font-size: 12px;
+				text-align:left;
+				line-height:20px; <- like padding for the text... (Need to explain this better later)
+				color:#000; <- the font color
+				background-color:#fff; <- the background color (behind the font)
+				text-decoration: underline;
+				font-style: italic;
+				font-weight: light;
+
+				border-style: solid;
+				border-color:#d3d3d3; <-these are inherited, usually, so not necessary to set 
+				border-thickness: ; <-these are inherited, usually, so not necessary to set 
+				border-radius:10px; <-curve on corners for rounded things
+				
+				box-shadow:1px 1px 10px black; <- this is how far to the right, how far down, how fuzzy, and what color the shadow is
+
+				overflow: scroll; <- auto will size itself, hidden means it won't be seeable at all...etc
+				}*/
+
+			#header_image {
+				height: 400px;
+				background-image: url("public/images/Sophie_Misty.jpeg");
+				background-color: gray; /*<- This will be the default, if the image cannot/doesn't load */
+				background-position: center bottom;			
+				background-size: cover;
+				background-repeat: no-repeat;	
+
+			}
+
+			#NavBar {
+				display: row;
+				position: relative;
+				height: 47px;
+				background-color: #61a0a5;			
+			}
+
+				#NavBar > b {
+					line-height: 47px;
+					padding-left: 10px;
+					font-size: 22px;
+				}
+
+				#NavBar > * {
+					line-height: 30px;
+					height: 47px;
+					height: 100%;
+				}
+
+
+				#NavBarRight {
+					display: inline-block;
+					display: table-row;
+					position: absolute;
+					top: 0px;
+					right: 0px;
+					height: 100%;
+					box-sizing: 100%;
+					overflow: auto;
+				}
+
+					#NavBar a {
+						display: inline-block;
+						height: 100%;						
+						width: 100px;
+						padding: 0px 10px;
+						padding-top: 15px;
+						text-decoration: none; 
+						text-align: center;
+						color: #333;
+						transition: all ease 0.5s;
+
+/* IF WE WANTED TO DO TABLE STYLING, BUT THIS DOESN'T WORK ON CHROME, SO BEST NOT TO USE FOR NOW
+						display: table-cell;
+						vertical-align: middle;*/
+
+					}
+			
+					#NavBar a:hover {
+						background-color: #7958d8;
+						color: white;
+					}
+
+					#NavBar a:active {
+						animation: wooWoo 1.5s ease;
+					}
+
+
+					@keyframes wooWoo {
+						0%, 100% {
+							background-color: #7958d8;
+							color: white;
+						}
+						50% {
+							background-color: white;
+							color: #7958d8;	
+						}
+					}
+
+
+/*RESPONSIVE STYLING GOES HERE...  SEPARATE FOR MOBILE, TABLET, ETC*/
+	@media all and (max-width: 400px) {
+	    /*styles for narrow desktop browsers and iPad landscape */
+	    #NavBar a {
+	        width: 25%;
+	    }    
+
+		#NavBar > * {
+			height: 20px;
+		}
+
+
+	}
