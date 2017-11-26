@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"v",
+				"vertical-align"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
 				"backgr",
 				"background-image"
 			],
@@ -38,10 +46,6 @@
 			[
 				"d",
 				"display"
-			],
-			[
-				"mar",
-				"margin-right"
 			],
 			[
 				"bord",
@@ -145,7 +149,7 @@
 			],
 			[
 				"bu",
-				"buttonOn	(bool)"
+				"buttonOn\t(bool)"
 			],
 			[
 				"view",
@@ -157,7 +161,7 @@
 			],
 			[
 				"blammed",
-				"blammedText	(?)"
+				"blammedText\t(?)"
 			],
 			[
 				"o",
@@ -169,31 +173,31 @@
 			],
 			[
 				"but",
-				"button	{}"
+				"button\t{}"
 			],
 			[
 				"list",
-				"listName	(?)"
+				"listName\t(?)"
 			],
 			[
 				"li",
-				"linkIndex	(num)"
+				"linkIndex\t(num)"
 			],
 			[
 				"bla",
-				"black_list	[]"
+				"black_list\t[]"
 			],
 			[
 				"butt",
-				"buttonOn	(bool)"
+				"buttonOn\t(bool)"
 			],
 			[
 				"black",
-				"black_list	{}"
+				"black_list\t{}"
 			],
 			[
 				"bl",
-				"black_list	(?)"
+				"black_list\t(?)"
 			],
 			[
 				"sq",
@@ -201,7 +205,7 @@
 			],
 			[
 				"pad",
-				"padStates	(?)"
+				"padStates\t(?)"
 			],
 			[
 				"la",
@@ -213,7 +217,7 @@
 			],
 			[
 				"drum",
-				"drumHitsData	(?)"
+				"drumHitsData\t(?)"
 			],
 			[
 				"drumP",
@@ -225,7 +229,7 @@
 			],
 			[
 				"squ",
-				"squareButton	(?)"
+				"squareButton\t(?)"
 			],
 			[
 				"condu",
@@ -241,7 +245,7 @@
 			],
 			[
 				"dev",
-				"deviceNum	(num)"
+				"deviceNum\t(num)"
 			],
 			[
 				"fu",
@@ -253,51 +257,47 @@
 			],
 			[
 				"MAX",
-				"MAX_MODABLE_MACROS	(num)"
+				"MAX_MODABLE_MACROS\t(num)"
 			],
 			[
 				"MAX_M",
-				"MAX_MODABLE_SENDS	(num)"
+				"MAX_MODABLE_SENDS\t(num)"
 			],
 			[
 				"trua",
-				"trackNum	(?)"
+				"trackNum\t(?)"
 			],
 			[
 				"curre",
-				"currentPage	(str)"
+				"currentPage\t(str)"
 			],
 			[
 				"track",
-				"trackNum	(?)"
+				"trackNum\t(?)"
 			],
 			[
 				"CU",
-				"CONDUCTOR_PAGE	(str)"
-			],
-			[
-				"v",
-				"velocity	(num)"
+				"CONDUCTOR_PAGE\t(str)"
 			],
 			[
 				"C",
-				"CLIP_PAGE	(str)"
+				"CLIP_PAGE\t(str)"
 			],
 			[
 				"da",
-				"data1	(?)"
+				"data1\t(?)"
 			],
 			[
 				"pd",
-				"padNum	(?)"
+				"padNum\t(?)"
 			],
 			[
 				"new",
-				"newVelocity	(num)"
+				"newVelocity\t(num)"
 			],
 			[
 				"TH",
-				"THRESH_PAD_MIN	(num)"
+				"THRESH_PAD_MIN\t(num)"
 			],
 			[
 				"upda",
@@ -305,7 +305,7 @@
 			],
 			[
 				"PD",
-				"PAD_CORNER_WIDTH	(num)"
+				"PAD_CORNER_WIDTH\t(num)"
 			],
 			[
 				"tryAs",
@@ -341,11 +341,11 @@
 			],
 			[
 				"cor",
-				"cornerIndex	(num)"
+				"cornerIndex\t(num)"
 			],
 			[
 				"cur",
-				"currentCornerValues	(?)"
+				"currentCornerValues\t(?)"
 			],
 			[
 				"re",
@@ -357,23 +357,23 @@
 			],
 			[
 				"tra",
-				"track	(num)"
+				"track\t(num)"
 			],
 			[
 				"tackS",
-				"trackSolos	(?)"
+				"trackSolos\t(?)"
 			],
 			[
 				"SO",
-				"SOLO_OFF	(str)"
+				"SOLO_OFF\t(str)"
 			],
 			[
 				"SOLO",
-				"SOLO_ON	(str)"
+				"SOLO_ON\t(str)"
 			],
 			[
 				"tr",
-				"trackSolos	(?)"
+				"trackSolos\t(?)"
 			],
 			[
 				"sho",
@@ -381,51 +381,51 @@
 			],
 			[
 				"S",
-				"SOLO_ON	(str)"
+				"SOLO_ON\t(str)"
 			],
 			[
 				"set",
-				"setToMe	(?)"
+				"setToMe\t(?)"
 			],
 			[
 				"trackS",
-				"trackSolos	(?)"
+				"trackSolos\t(?)"
 			],
 			[
 				"mod",
-				"modButton2	(str)"
+				"modButton2\t(str)"
 			],
 			[
 				"num",
-				"numTracksArmed	(num)"
+				"numTracksArmed\t(num)"
 			],
 			[
 				"pr",
-				"previouslyMultiArmed	(bool)"
+				"previouslyMultiArmed\t(bool)"
 			],
 			[
 				"REC",
-				"RECORDING_OFF	(str)"
+				"RECORDING_OFF\t(str)"
 			],
 			[
 				"RE",
-				"RECORDING_NOW	(str)"
+				"RECORDING_NOW\t(str)"
 			],
 			[
 				"beat",
-				"beatPosition	(num)"
+				"beatPosition\t(num)"
 			],
 			[
 				"nex",
-				"nextTrack	(num)"
+				"nextTrack\t(num)"
 			],
 			[
 				"nu",
-				"numTracksArmed	(num)"
+				"numTracksArmed\t(num)"
 			],
 			[
 				"s",
-				"status	(str)"
+				"status\t(str)"
 			],
 			[
 				"send",
@@ -433,15 +433,15 @@
 			],
 			[
 				"within",
-				"within1Over32OfMeasureStart	(bool)"
+				"within1Over32OfMeasureStart\t(bool)"
 			],
 			[
 				"sel",
-				"selectedTrack	(num)"
+				"selectedTrack\t(num)"
 			],
 			[
 				"D",
-				"DRUM_PAGE	(?)"
+				"DRUM_PAGE\t(?)"
 			],
 			[
 				"tryAsSC",
@@ -449,19 +449,19 @@
 			],
 			[
 				"max",
-				"maxCorner	(num)"
+				"maxCorner\t(num)"
 			],
 			[
 				"lig",
-				"lightAmountsForThumbzSymbol	(?)"
+				"lightAmountsForThumbzSymbol\t(?)"
 			],
 			[
 				"vol",
-				"volumeSlides	[]"
+				"volumeSlides\t[]"
 			],
 			[
 				"curr",
-				"currentlyPlaying	(bool)"
+				"currentlyPlaying\t(bool)"
 			],
 			[
 				"get",
@@ -469,23 +469,23 @@
 			],
 			[
 				"n",
-				"noteNum	(num)"
+				"noteNum\t(num)"
 			],
 			[
 				"TR",
-				"TRACK_BANKS	[]"
+				"TRACK_BANKS\t[]"
 			],
 			[
 				"ne",
-				"nextTrack	(num)"
+				"nextTrack\t(num)"
 			],
 			[
 				"sele",
-				"selectedTrack	(num)"
+				"selectedTrack\t(num)"
 			],
 			[
 				"R",
-				"RECORDING_CLOSED	(str)"
+				"RECORDING_CLOSED\t(str)"
 			],
 			[
 				"selec",
@@ -509,16 +509,33 @@
 			],
 			[
 				"to",
-				"totalScenesAvailable	(num)"
+				"totalScenesAvailable\t(num)"
 			],
 			[
 				"w",
-				"widthScenes	(num)"
+				"widthScenes\t(num)"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "scopeChoices.html",
+			"settings":
+			{
+				"buffer_size": 4001,
+				"line_ending": "Unix",
+				"name": "<style>"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1994,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -561,7 +578,7 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/Misty/Code/Web/mistynickle.github.io"
+		"/Users/seph/Code/Web/mistynickle.github.io"
 	],
 	"file_history":
 	[
@@ -767,7 +784,7 @@
 			"{\n",
 			";\n",
 			"var spinner = value - value%64;  ",
-			"		\n",
+			"\t\t\n",
 			"46",
 			"}\n",
 			" \n",
@@ -827,8 +844,68 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "scopeChoices.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4001,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1001,
+								1001
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<style>",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1994,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1009,
+								1009
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 826.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
