@@ -1,0 +1,152 @@
+@font-face { 
+  font-family: Nunito; 
+  src: url(../fonts/Nunito/Nunito-Regular.ttf);
+} 
+
+
+@font-face { 
+  font-family: Nunito; 
+  src: url(../fonts/Nunito/Nunito-Bold.ttf);
+  font-weight: bold; 
+} 
+
+
+
+html, body {
+	box-sizing: border-box;
+	min-height: 100vh;
+	min-width: 100vw;
+}
+
+html, body, h1 {
+	margin: 0px;
+	padding: 0px;
+}
+
+*, *::after, *::before {
+	box-sizing: inherit;
+}
+
+
+header {
+	display: block;
+}
+
+
+html {
+	background-color: #222;
+}
+
+body {
+	font-family: "Nunito", arial;
+	padding-top: 40px;
+	color: #333;
+	
+}
+
+	body::before {
+		content: ' ';
+		position: fixed;
+		z-index: -1;
+		top: 0px;
+		left: 0px;
+		width: 100vw;
+		height: 100vh;
+		background-color: black;
+		/*background-color: #922;*/
+		background-image: url("../images/photos/100x100/Playwood_Palace-Blackboard.png");
+		background-size: cover;
+		background-position: center center;
+		opacity: 0.5;
+		filter: blur(50px);
+	}
+
+	topbar {
+		color: white;
+		display: block;
+		position: fixed;
+		top: 0px;
+		width: 100vw;
+		height: 40px;
+		background-color: #268;
+		border-bottom: 3px solid #157;
+		/*background-color: #752475;*/
+		/*background-image: linear-gradient(rgba(0,250,250,0.9), rgba(0, 175, 250, 0.9));*/
+		/*background-image: linear-gradient(#3480a6, rgb(34, 103, 137));*/
+		/*background-image: linear-gradient(#00b4c4, rgb(34, 103, 137));*/
+		border-bottom: 3px solid #5c0a34;
+		/*background-image: linear-gradient(#ad339c, rgb(137, 34, 65));*/
+		background-image: linear-gradient(#ad3333, rgb(137, 34, 65));
+		z-index: 100;
+		box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	}
+
+		topbar #root_link {
+			font-size: 25px;
+			padding: 2px 10px;
+		}
+
+		topbar > links {
+			display: block;
+			position: absolute;
+			right: 40px;
+			top: 0px;
+			height: 100%;
+			/*background-color: rgba(0,0,0,0.1);*/
+		}
+
+			topbar a {
+				display: inline-block;
+				height: 100%;
+				padding: 5px 10px;
+				color: inherit;
+				text-decoration: none;
+				border-left: 1px dashed rgba(250,250,250,0.2);
+				font-size: 16px;
+			}
+
+				topbar a:last-child {
+					border-right: 1px dashed rgba(250,250,250,0.2);
+				}
+
+				topbar a:hover {
+					background-color: rgba(0,0,0,0.1);
+				}
+
+				topbar a.current_page {
+					/*border-bottom: 4px solid white;*/
+					/*border-bottom: 4px solid #00ffd4;*/
+					border-bottom: 4px solid #ff005a;
+				}
+
+
+	gallery-container {
+		display: block;
+		position: absolute;
+		bottom: 0px;
+		width: 100%;
+		text-align: center;
+	}
+
+		
+					
+
+	header-img {
+		background-color: #111;
+	}
+
+
+	header-img, header-img > img-wrap {
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+	}
+
+		header-img > img-wrap {
+			background-size: cover;
+			background-position: center center;
+		}
+

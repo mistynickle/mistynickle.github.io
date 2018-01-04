@@ -2,333 +2,28 @@
 <html>
 <head>
 	<title>Lost in Living</title>
+	<script type="text/javascript" src="../../public/js/PINE_Core_4.8.js" NoFreeze></script>
+	<script type="text/javascript" src="templ_projects.js" NoFreeze></script>
+	<script type="text/javascript" NoFreeze>ID_OF_LINK_FOR_CURRENT_PAGE = "view_projects";</script>
+	<script type="text/javascript" src="templ_LiL.js" NoFreeze></script>
+
+
+	
+
+	<link rel="stylesheet" type="text/css" href="../../public/css/LiL.css">
 
 	<script type="text/javascript" src="../FREEZE.js" NoFreeze></script>
-	<script type="text/javascript" src="../../public/js/PINE_Core_4.8.js" NoFreeze></script>
 	<script type="text/javascript" src="../../public/js/PINE_Var.js" NoFreeze></script>
 	<script type="text/javascript" src="../../public/js/PINE_Needles.js" NoFreeze></script>
+	<script type="text/javascript" src="../../public/js/PINE_Includes.js" NoFreeze></script>
+
+	<link rel="stylesheet" type="text/css" href="../../public/css/gallery.css">
+	<script type="text/javascript" src="../../public/js/gallery.js"></script>
 </head>
 <body>
 
-<topbar>
-	Lost in Living
-	<links>
-		<a href="../../lalal">View Collaborators</a>
-		<a href="">View Projects</a>
-	</links>
-</topbar>
 
-
-
-
-
-
-<style>
-gallery-container {
-	display: block;
-	position: absolute;
-	bottom: 0px;
-	width: 100%;
-	text-align: center;
-}
-
-	gallery {
-		display: inline-block;
-		position: relative;
-		padding: 0px 15px 3px 15px;
-	}
-		gallery::before {
-			content: " ";
-			position: absolute;
-			left: 0px;
-			bottom: 0px;
-			width: 100%;
-			border-bottom: 15px solid black;
-	    border-left: 9px solid transparent;
-	    border-right: 9px solid transparent;
-	    opacity: 0.4;
-	    height: 0;
-		}
-
-		gallery a {
-			background-color: #111;
-			display: inline-block;
-			position: relative;
-			height: 50px;
-			width: 50px;
-			border: 2px solid black;
-			border-radius: 8px;
-			z-index: 2;
-			transition: all ease 0.2s;
-		}
-
-			gallery a.zoomed_pic {
-				border-color: #00ffab;
-				height: 55px;
-				width: 55px;
-			}
-
-			gallery a img {
-				height: 100%;
-				width: 100%;
-				border-radius: 8px;
-			}
-
-			gallery a desc {
-				display: none;
-				position: absolute;
-				white-space: nowrap;
-				top: 0px;
-				left: 50%;
-				background-color: #333;
-				color: #DDD;
-				border-radius: 5px;
-				padding: 5px;
-				transform: translate(-50%, -120%);
-				font-size: 12px;
-			}
-
-				gallery a desc::before {
-					content: " ";
-					background-color: inherit;
-					height: 10px;
-					width: 10px;
-					position: absolute;
-					bottom: 0px;
-					left: 50%;
-					transform: translate(-50%, 50%) rotate(45deg) ;
-				}
-
-				gallery a:hover desc {
-					display: block;
-				}
-
-			gallery a:hover {
-				cursor: zoom-in;
-				height: 55px;
-				width: 55px;
-			}
-
-				
-
-header-img {
-	background-color: #111;
-}
-
-
-header-img, header-img > img-wrap {
-	display: block;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 100%;
-}
-
-	header-img > img-wrap {
-		background-size: cover;
-		background-position: center center;
-	}
-
-
-project > header > info {
-	display: block;
-	position: relative;
-	z-index: 5;
-}
-
-
-	project > info {
-		display: block;
-		border-top: 3px solid #c7f8ec;
-	}
-
-</style>
-
-
-<script type="text/javascript">
-	function initGalleries() {
-		var $galleries = document.getElementsByTagName("gallery");
-		for(var g = 0; g < $galleries.length; g++) {
-			let $gallery = $galleries[g];
-			let $currentLink = $gallery.getElementsByClassName("zoomed_pic")[0];
-			let $imgViewer = document.getElementById($gallery.getAttribute("target"));
-
-			let links = $gallery.getElementsByTagName("a");
-			for(var i = 0; i < links.length; i++) {
-				let link = links[i];
-				link.addEventListener("click", function(event) {
-					event.preventDefault();
-					$currentLink.classList.remove("zoomed_pic");
-					link.classList.add("zoomed_pic");
-					$currentLink = link;
-					$imgViewer.style.backgroundImage = `url("`+link.href+`")`;
-					return false;
-				});
-			}
-		}
-
-
-		// var $imgViewer;
-		// var $currentLink;
-		
-		// if($imgViewer === undefined)
-		// 	$imgViewer = document.getElementById("playwood_palace_big_image").childNodes[1];
-
-		// var $gallery = document.getElementById("gallery");
-		// if($currentLink === undefined)
-		// 		$currentLink = $gallery.getElementsByClassName("zoomed_pic")[0];
-
-		// console.log($currentLink);
-
-		// var links = $gallery.getElementsByTagName("a");
-		// for(var i = 0; i < links.length; i++) {
-		// 	let link = links[i];
-		// 	link.addEventListener("click", function(event) {
-		// 		event.preventDefault();
-		// 		$currentLink.classList.remove("zoomed_pic");
-		// 		link.classList.add("zoomed_pic");
-		// 		$currentLink = link;
-		// 		$imgViewer.style.backgroundImage = `url("`+link.href+`")`;
-		// 		return false;
-		// 	});
-		// }
-	}
-
-	if(window.hasOwnProperty("PINE"))
-		PINE.ready(initGalleries);
-	else 
-		document.addEventListener("DOMContentLoaded", initGalleries);		
-</script>
-
-
-
-
-
-
-
-<script type="text/javascript" NoFreeze>
-var Communities = [
-	{
-		id: "texas_burn",
-		name: "DaFT &amp; FaFT",
-		date: "2015 - Current",
-		logo: "../../public/images/logos/Flipside.png",
-		breif: "Projects Made with the Build Teams for Texas Burning Man Regionals (Flipside &amp; Freezerburn).",
-
-		links: [
-			{ href:"https://www.burningflipside.com/", text:"BurningFlipside.com"},
-			{ href:"http://www.freezerburn.org/", text:"FreezerBurn.org"},
-		],
-
-		projects: [
-			{
-				id: "playwood_palace",
-				name: "Playwood Palace",
-				date: "Jan 2017 - Apr 2017",
-				role: "Designers and Build Leads",
-				gallery: {
-					startIndex: 3,
-					images: [
-						{ title: "Glamor Shot", href: "Playwood_Palace-by_Mystic_Loden.png" },
-						{ title: "LiL and Fire", href: "Playwood_Palace-Bebes_and_Fire.png" },
-						{ title: "Inner Adults", href: "Playwood_Palace-Inner_Adults.png" },
-						{ title: "Sunset Booshers", href: "Playwood_Palace-Sunset_Booshers.png" },
-						{ title: "The Forest", href: "Playwood_Palace-Forest.png" },
-						{ title: "Hobbit Door", href: "Playwood_Palace-Hobbit_Door.png" },
-						{ title: "Dustin Boosh", href: "Playwood_Palace-Dustin_Boosh.png" },
-						{ title: "Theme Shwag", href: "Playwood_Palace-Rainbows_vs_Unicorns_Decal.png" },
-						{ title: "Sunrise", href: "Playwood_Palace-Sunrise_Boosh.gif"},
-						{ title: "Build Timelapse", href: "Playwood_Palace-Timelapse.gif" },
-					],
-				},
-				info: [
-					{	name: "Description",
-						info: "The Effigy for Flipside 2017.  A three story playground maze with flame throwers, a giant slide, and thematic rooms including a hobit hole, a ball pit in space, a secret treasure room, a bar/cafe, and a forest." 
-					},
-					{	name: "Members Involved",
-						info: "Misty Nickle (Design &amp; Creative Director), Seph Reed (Design &amp; Foreman)" 
-					},
-					{	name: "Project Website",
-						info: `<a href="http://sephreed.github.io/Playwood_Palace/">sephreed.github.io/Playwood_Palace/</a>`
-					},
-				]
-			},
-
-			{
-				id: "pine_cononagon",
-				name: "Pine Cononagon",
-				date: "Jan 2018 - Current",
-				role: "Designers and Build Leads",
-				gallery: {
-					startIndex: 2,
-					images: [
-						{ title: "Underworld", href: "Pine_Cononagon-Cave.png" },
-						{ title: "Spiral Stairs", href: "Pine_Cononagon-Render_Spiral_Stairs.png" },
-						{ title: "Glamor Shot", href: "Pine_Cononagon-Render_Glamor.png" },
-						{ title: "Backside", href: "Pine_Cononagon-Render_Back.png" },
-						{ title: "Back Right", href: "Pine_Cononagon-Render_Back_Right.png" },
-						{ title: "Second Floor", href: "Pine_Cononagon-Render_Second_Floor.png" },
-					],
-				},
-				info: [
-					{	name: "Description",
-						info: "Our Effigy for Flipside 2018.  A three story pine cone which plays with themes of light, dark, and mortality.  The upper floor is the entrance into a forest which winds down into an underworld/afterlife on the first floor." 
-					},
-					{	name: "Members Involved",
-						info: "Misty Nickle (Design &amp; Creative Director), Seph Reed (Design &amp; Foreman)" 
-					},
-					{	name: "Project Website",
-						info: `<a href="http://mistynickle.github.io/DaFT-2018/proposal.html">mistynickle.github.io/DaFT-2018/proposal.html</a>`
-					},
-				]
-			}
-		]
-	},
-
-
-	{
-		id: "iron_monkeys",
-		name: "Iron Monkeys",
-		date: "2009-2016",
-		logo: "../../public/images/logos/Iron_Monkeys(small_patch).png",
-		breif: "Seattle Based Metal Working Collective ... stuff with BM",
-
-		links: [
-			{ href:"http://www.ironmonkeyarts.org/", text:"IronMonkeyArts.org"}
-		],
-
-		projects: []
-	}
-]
-
-
-var img_paths = {
-	base: "../../public/images/",
-	default: "photos/",
-	large: "photos/1200x1200/",
-	tiny: "photos/100x100/",
-	gif: "gifs/",
-}
-Communities.forEach((comm) => {
-	comm.projects.forEach((proj) => {
-		proj.gallery.images.forEach((img) => {
-			if(img.href.endsWith(".gif")) {
-				img.fullHref = img_paths.base + img_paths.gif + img.href;
-				img.largeHref = img.tinyHref = img.fullHref;
-			}
-			else {
-				img.fullHref = img_paths.base + img_paths.default + img.href;
-				img.tinyHref = img_paths.base + img_paths.tiny + img.href;	
-				img.largeHref = img_paths.base + img_paths.large + img.href;	
-			}
-		});
-		proj.gallery.startImage = proj.gallery.images[proj.gallery.startIndex].largeHref;
-		proj.gallery.images[proj.gallery.startIndex].isSelected = true;
-
-	});
-});
-</script>
+<view src="templ_topbar.html"></view>
 
 
 
@@ -356,19 +51,21 @@ Communities.forEach((comm) => {
 						<header-img>
 							<img-wrap id="{{proj.id}}_big_image" style="background-image: url('{{proj.gallery.startImage}}');"></img-wrap>
 						</header-img>
-						<info>
+						<brief>
 							<date>{{proj.date}}</date>
 							<h1>{{proj.name}}</h1>
 							<role>Role: {{proj.role}}</role>
-						</info>
+						</brief>
 
 						<gallery-container>
-							<gallery id="gallery" spawner="proj.gallery.images" target="{{proj.id}}_big_image">
+							<gallery spawner="proj.gallery.images" target="{{proj.id}}_big_image">
 								<a spawn 
 									class="{{? img.isSelected : 'zoomed_pic'}}"
 									pvars="img=proj.gallery.images[i]" 
-									href="{{img.fullHref}}">
-									<img src="{{img.tinyHref}}"><desc>{{img.title}}</desc>
+									href="{{img.fullHref}}"
+									style="background-image: url('{{img.tinyHref}}');"
+									>
+									<img src="{{img.fullHref}}"><desc>{{img.title}}</desc>
 								</a>
 							</gallery>
 						</gallery-container>
@@ -396,148 +93,111 @@ Communities.forEach((comm) => {
 </body>
 
 <style>
-html, body {
-	box-sizing: border-box;
-	min-height: 100vh;
-	min-width: 100vw;
+
+
+
+input.see_more {
+	display: none;
 }
 
-html, body, h1 {
-	margin: 0px;
-	padding: 0px;
+community {
+	position: relative;
+	display: inline-block;
+	/*background-color: white;*/
+	background-color: #f7f3dc;
+
+	/*border: 1px solid black;*/
+	border-radius: 3px;
+	/*max-width: 800px;*/
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 30px;
+	margin-bottom: 100px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);  
+	overflow: hidden;
 }
 
-*, *::after, *::before {
-	box-sizing: inherit;
-}
-
-
-header {
-	display: block;
-}
-
-
-body {
-	font-family: arial;
-	padding-top: 30px;
-	color: #333;
-	background-color: #222;
-}
-
-	topbar {
-		color: white;
-		display: block;
-		position: fixed;
-		top: 0px;
-		width: 100vw;
-		height: 40px;
-		background-color: #268;
-		border-bottom: 3px solid #157;
-		/*background-color: #752475;*/
-		/*background-image: linear-gradient(rgba(0,250,250,0.9), rgba(0, 175, 250, 0.9));*/
-		z-index: 100;
-		box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	community > header {
+		display: flex;
+		flex-direction: row;
+		padding: 10px;
+		/*background-color: #21b7f8;
+		border-bottom: 3px solid #189dd7;*/
+		background-color: #f89021;
+		/*border-bottom: 3px solid #de7607;*/
 	}
-		topbar > links {
-			display: block;
-			position: absolute;
-			right: 0px;
-			top: 0px;
+		community > header > img-area {
+			flex-grow: 0;
+			width: 100px;
 		}
-
-
-
-
-	input.see_more {
-		display: none;
-	}
-
-	community {
-		position: relative;
-		display: inline-block;
-		background-color: white;
-
-		/*border: 1px solid black;*/
-		border-radius: 3px;
-		/*max-width: 800px;*/
-		width: 90%;
-		margin-left: 5%;
-		margin-top: 30px;
-		margin-bottom: 100px;
-		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);  
-		overflow: hidden;
-	}
-
-		community > header {
-			display: flex;
-			flex-direction: row;
-			padding: 10px;
-			/*background-color: #21b7f8;
-			border-bottom: 3px solid #189dd7;*/
-			background-color: #f89021;
-			/*border-bottom: 3px solid #de7607;*/
-		}
-			community > header > img-area {
-				flex-grow: 0;
-				width: 100px;
+			community > header > img-area > img {
+				width: 100%;
+				border: 3px solid black;
+				background-color: black;
+				box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+				border-radius: 500px;
 			}
-				community > header > img-area > img {
-					width: 100%;
-					border: 3px solid black;
-					background-color: black;
-					box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-					border-radius: 500px;
-				}
 
-			community > header > info {
-				flex-grow: 1;
+		community > header > info {
+			flex-grow: 1;
+			display: inline-block;
+			font-weight: bold;
+			padding-left: 10px;
+			vertical-align: top;
+		}
+			community > header > info > h1 {
+				color: white;
+				text-shadow: 1px 1px #333, -1px -1px #333, -1px 1px #333, 1px -1px #333;
+			}
+
+			community > header > info > links {
 				display: inline-block;
-				font-weight: bold;
-				padding-left: 10px;
-				vertical-align: top;
+				float: right;
+				font-size: 11px;
 			}
-				community > header > info > h1 {
+
+				community > header > info > links > a {
+					text-decoration: none;
 					color: white;
-					text-shadow: 1px 1px #333, -1px -1px #333, -1px 1px #333, 1px -1px #333;
 				}
 
-				community > header > info > links {
-					display: inline-block;
-					float: right;
-					font-size: 11px;
-				}
-
-					community > header > info > links > a {
-						text-decoration: none;
-						color: white;
+					community > header > info > links > a:hover {
+						text-decoration: underline;
+						/*color: #599;*/
 					}
 
-						community > header > info > links > a:hover {
-							text-decoration: underline;
-							/*color: #599;*/
-						}
 
-
-		project {
-			display: block;
-			position: relative;
-			/*border-bottom: 3px solid rgb(23, 156, 214);*/
-			border-top: 3px solid rgb(222, 118, 7);
+	project {
+		display: block;
+		position: relative;
+		/*border-bottom: 3px solid rgb(23, 156, 214);*/
+		border-top: 3px solid rgb(222, 118, 7);
+	}
+		project:nth-child(2n){
+			background-color: rgba(0,0,0,0.03);
 		}
-			project:nth-child(2n){
-				background-color: rgba(0,0,0,0.03);
-			} 
+
+		project > info {
+			display: block;
+			border-top: 3px solid #c7f8ec;
+		} 
 
 
-			project header {
+		project header {
+			position: relative;
+			padding: 10px;
+			background-color: #222;
+			text-shadow: 1px 1px #333, -1px -1px #333, -1px 1px #333, 1px -1px #333;
+			color: white;
+			height: 80vh;
+			background-position: center center;
+			background-size: cover;
+		}
+
+			project > header > brief {
+				display: block;
 				position: relative;
-				padding: 10px;
-				background-color: #222;
-				text-shadow: 1px 1px #333, -1px -1px #333, -1px 1px #333, 1px -1px #333;
-				color: white;
-				height: 80vh;
-				background-position: center center;
-				background-size: cover;
+				z-index: 5;
 			}
 
 				project header role, project header date {
@@ -553,91 +213,94 @@ body {
 					font-size: 24px;
 				}
 
-			project > img-area {
-				display: block;
-				text-align: center;
-				height: 300px;
-				margin: 5px 0px 10px 0px;
-				padding: 10px;
-			}
-				project > img-area img {
-					position: relative;
-					display: inline-block;
-					max-width: 100%;
-					max-height: 100%;
-					border-radius: 5px;
-					border: 1px ridge rgba(0,0,0,0.4);
-				}
-
-					img-area > a:hover  {
-						cursor: zoom-in;
-					}
-
-
-			project table {
-				border-collapse: collapse;
-				margin: 10px;
-			}
-
-				project table td {
-					vertical-align: top;
-					padding: 5px 0px 10px 0px;
-				}
-					project table td:first-child {
-						font-weight: bold;
-					}
-
-					project table td:not(:first-child) {
-						padding-left: 10px;
-					}
-
-				project table tr:not(:last-child) {
-					border-bottom: 1px solid rgba(0,0,0,0.2);	
-				}
-
-		community see-more {
+		project > img-area {
 			display: block;
-			position: absolute;
-			bottom: 0px;
-			height: 180px;
-			width: 100%;
-			z-index: 10;
-
-			padding: 10px;
-			padding-top: 140px;
-
 			text-align: center;
+			height: 300px;
+			margin: 5px 0px 10px 0px;
+			padding: 10px;
+		}
+			project > img-area img {
+				position: relative;
+				display: inline-block;
+				max-width: 100%;
+				max-height: 100%;
+				border-radius: 5px;
+				border: 1px ridge rgba(0,0,0,0.4);
+			}
 
-			background-image: linear-gradient(transparent, white 80%);
+				img-area > a:hover  {
+					cursor: zoom-in;
+				}
+
+
+		project table {
+			border-collapse: collapse;
+			margin: 10px;
 		}
 
-			label.see_more:hover, label.see_less:hover {
-				color: #0AF;
-				text-decoration: underline;
-				text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
-				cursor: pointer;
+			project table td {
+				vertical-align: top;
+				padding: 5px 0px 10px 0px;
+			}
+				project table td:first-child {
+					font-weight: bold;
+				}
+
+				project table td:not(:first-child) {
+					padding-left: 10px;
+				}
+
+			project table tr:not(:last-child) {
+				border-bottom: 1px solid rgba(0,0,0,0.2);	
 			}
 
-			community > extra-projects {
+	community see-more {
+		display: block;
+		position: absolute;
+		bottom: 0px;
+		height: 180px;
+		width: 100%;
+		z-index: 10;
+
+		padding: 10px;
+		padding-top: 140px;
+
+		text-align: center;
+
+		background-image: linear-gradient(transparent, white 80%);
+	}
+
+		label.see_more:hover, label.see_less:hover {
+			color: #0AF;
+			text-decoration: underline;
+			text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+			cursor: pointer;
+		}
+
+		community > extra-projects {
+			display: none;
+		}
+
+			community .see_less {
 				display: none;
 			}
 
-				community .see_less {
-					display: none;
-				}
+			community label.see_less {
+				text-align: center;
+				padding: 10px;
+			}
+		
+			input:checked + community > .see_less {
+				display: block;
+			}
 
-				community label.see_less {
-					text-align: center;
-					padding: 10px;
-				}
-			
-				input:checked + community > .see_less {
-					display: block;
-				}
+			input:checked + community see-more {
+				display: none;
+			}
 
-				input:checked + community see-more {
-					display: none;
-				}
+
+
 
 
 

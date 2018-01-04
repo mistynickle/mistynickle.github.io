@@ -1,0 +1,81 @@
+gallery {
+	display: inline-block;
+	position: relative;
+	padding: 0px 15px 3px 15px;
+}
+	gallery::before {
+		content: " ";
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+		width: 100%;
+		border-bottom: 15px solid #222;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    opacity: 0.75;
+    height: 0;
+	}
+
+	gallery a {
+		background-color: #111;
+		display: inline-block;
+		position: relative;
+		height: 50px;
+		width: 50px;
+		border: 2px solid black;
+		border-radius: 8px;
+		z-index: 2;
+		margin-left: 2px;
+		transition: all ease 0.2s;
+		background-size: cover;
+		background-position: center center;
+	}
+
+		gallery a.zoomed_pic {
+			/*border-color: #00ffab;*/
+			border-color: white;
+			height: 55px;
+			width: 55px;
+		}
+
+		gallery a img {
+			height: 100%;
+			width: 100%;
+			/*border-radius: 8px;*/
+			visibility: hidden;
+		}
+
+		gallery a desc {
+			display: none;
+			position: absolute;
+			white-space: nowrap;
+			top: 0px;
+			left: 50%;
+			background-color: #333;
+			color: #DDD;
+			border-radius: 5px;
+			padding: 5px;
+			transform: translate(-50%, -120%);
+			font-size: 12px;
+		}
+
+			gallery a desc::before {
+				content: " ";
+				background-color: inherit;
+				height: 10px;
+				width: 10px;
+				position: absolute;
+				bottom: 0px;
+				left: 50%;
+				transform: translate(-50%, 50%) rotate(45deg) ;
+			}
+
+			gallery a:hover desc {
+				display: block;
+			}
+
+		gallery a:hover {
+			cursor: zoom-in;
+			height: 55px;
+			width: 55px;
+		}

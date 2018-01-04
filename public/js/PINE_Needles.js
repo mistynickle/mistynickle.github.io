@@ -94,7 +94,7 @@ PINE.createNeedle("[spawner]", function() {
 					domNode.appendChild(addMe);
 				}
 			}
-			// else console.log("spawner missing source", domNode)
+			else console.log("spawner missing source", domNode);
 
 			return PINE.updateAt(domNode);
 		}

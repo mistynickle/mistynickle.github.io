@@ -43,14 +43,19 @@ FREEZE.export = function() {
 		out = out.replace(FREEZE.regexs.cssUrl, function(match, p1, p2) {
 			// console.log(match);
 			var newUrl = p2.replace(FREEZE.exportRelativePath, "");
+			newUrl = newUrl.replace("templ_", "");
 			return match.replace(p2, newUrl);
 		});
 
 		out = out.replace(FREEZE.regexs.attribute, function(match, p1, p2, p3) {
 			console.log(p3, FREEZE.exportRelativePath);
 			var newUrl = p3.replace(FREEZE.exportRelativePath, "");
+			newUrl = newUrl.replace("templ_", "");
 			return match.replace(p3, newUrl);
 		});
+
+		// out = out.replace("templates/", "");
+		// out = out.replace("templ_", "");
 	}
 	
 	console.log(out);
@@ -74,7 +79,7 @@ FREEZE.$widget.innerHTML = `
 		top: 0px;
 		padding: 0px 0px 10px 10px;
 		z-index: 9999;
-		opacity: 0.1;
+		opacity: 0;
 		background: black;
 		color: white;
 	}

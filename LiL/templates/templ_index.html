@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lost in Living</title>
+	<script type="text/javascript" src="../../public/js/PINE_Core_4.8.js" NoFreeze></script>
+	<script type="text/javascript" src="templ_index.js" NoFreeze></script>
+
+	<script type="text/javascript" NoFreeze>ID_OF_LINK_FOR_CURRENT_PAGE = "root_link";</script>
+	<script type="text/javascript" src="templ_LiL.js" NoFreeze></script>
+	
+
+	<link rel="stylesheet" type="text/css" href="../../public/css/LiL.css">
+
+	<script type="text/javascript" src="../FREEZE.js" NoFreeze></script>
+	<script type="text/javascript" src="../../public/js/PINE_Var.js" NoFreeze></script>
+	<script type="text/javascript" src="../../public/js/PINE_Needles.js" NoFreeze></script>
+	<script type="text/javascript" src="../../public/js/PINE_Includes.js" NoFreeze></script>
+
+	<link rel="stylesheet" type="text/css" href="../../public/css/gallery.css">
+	<script type="text/javascript" src="../../public/js/gallery.js"></script>
+</head>
+<body>
+
+
+<view src="templ_topbar.html"></view>
+
+
+
+
+<header-img>
+	<img-wrap id="main_big_image" style="background-image: url('{{Gallery.startImage}}');"></img-wrap>
+</header-img>
+
+<gallery-container>
+	<gallery spawner="Gallery.images" target="main_big_image" imgScrollTimeout="3500">
+		<a spawn 
+			class="{{? img.isSelected : 'zoomed_pic'}}"
+			pvars="img=Gallery.images[i]" 
+			href="{{img.fullHref}}"
+			style="background-image: url('{{img.tinyHref}}');"
+			>
+			<img src="{{img.fullHref}}"><desc>{{img.title}}</desc>
+
+			<!-- <info>
+				<h1>{{img.title}}</h1>
+			</info> -->
+		</a>
+	</gallery>
+</gallery-container>
+
+</body>
+
+
+
+<style>
+header-img {
+	position: fixed;
+	top: 50px;
+	left: 0px;
+	right: 0px;
+	bottom: 10px;
+	width: unset;
+	height: unset;
+	/*border-radius: 5px;*/
+	/*overflow: hidden;*/
+}
+
+gallery a info {
+	display: none;
+	position: fixed;
+	top: 40px;
+	left: 0px;
+	width: 100%;
+	/*background-color: red;*/
+	/*opacity: 0.2;*/
+}
+
+	gallery a.zoomed_pic info {
+		display: block;
+	}
+</style>
+
+</html>

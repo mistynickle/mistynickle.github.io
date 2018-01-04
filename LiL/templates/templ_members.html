@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lost in Living</title>
+	<script type="text/javascript" src="../../public/js/PINE_Core_4.8.js" NoFreeze></script>
+	<script type="text/javascript" src="templ_members.js" NoFreeze></script>
+	<script type="text/javascript" NoFreeze>ID_OF_LINK_FOR_CURRENT_PAGE = "view_members";</script>
+	<script type="text/javascript" src="templ_LiL.js" NoFreeze></script>
+	
+
+	<link rel="stylesheet" type="text/css" href="../../public/css/LiL.css">
+
+	<script type="text/javascript" src="../FREEZE.js" NoFreeze></script>
+	<script type="text/javascript" src="../../public/js/PINE_Var.js" NoFreeze></script>
+	<script type="text/javascript" src="../../public/js/PINE_Needles.js" NoFreeze></script>
+	<script type="text/javascript" src="../../public/js/PINE_Includes.js" NoFreeze></script>
+
+	<!-- <link rel="stylesheet" type="text/css" href="../../public/css/gallery.css">
+	<script type="text/javascript" src="../../public/js/gallery.js"></script> -->
+</head>
+<body>
+
+
+<view src="templ_topbar.html"></view>
+
+
+
+<mainContent>
+	<memebers spawner="Members">
+		<member spawn pvars="memb=Members[i]">
+			<h2>{{memb.name}}</h2>
+			<img-area style="background-image: url('{{memb.img}}')">
+				<img src="{{memb.img}}">
+			</img-area>
+			<blurb> 
+				<table>
+					<tbody spawner="memb.info">
+						<tr spawn pvars="item=memb.info[i]"><td>{{item.name}}</td><td>{{item.data}}</td></tr>
+					</tbody>
+				</table>
+			</blurb>
+		</member>
+	</memebers>
+</mainContent>
+</body>
+
+<style>
+member {
+	display: block;
+	position: relative;
+	background-color: #f7f3dc;
+	margin: 20px 5%;
+	border-radius: 2px;
+	border-top-left-radius: 80px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);  
+	overflow: hidden;
+	min-height: 175px;
+}
+
+	member h2 {
+		position: absolute;
+		padding: 10px;
+		padding-left: 165px;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		background-color: #f89021;
+		text-shadow: 1px 1px #333, -1px -1px #333, -1px 1px #333, 1px -1px #333;
+		color: white;
+		margin: 0px;
+		border-bottom: 3px solid rgb(222, 118, 7);
+	}
+
+
+
+		member img-area {
+			display: block;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 2;
+			flex-grow: 0;
+			height: 150px;
+			width: 150px;
+			margin: 10px;
+			border: 3px solid #333;
+			border-radius: 1000px;
+			background-size: cover;
+			background-position: center center;
+			box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+		}
+
+			member img-area img {
+				opacity: 0;
+				height: 100%;
+				width: 100%;
+			}
+
+		member blurb {
+			display: block;
+			padding-left: 180px;
+			margin-top: 57px;
+			border-top: 3px solid #c7f8ec;
+		}
+
+			blurb table {
+				border-collapse: collapse;
+				/*margin: 10px;*/
+			}
+
+				blurb table td {
+					vertical-align: top;
+					padding: 5px 0px 10px 0px;
+				}
+					blurb table td:first-child {
+						font-weight: bold;
+					}
+
+					blurb table td:not(:first-child) {
+						padding-left: 20px;
+					}
+
+				blurb table tr:not(:last-child) {
+					border-bottom: 1px solid rgba(0,0,0,0.2);	
+				}
+</style>
+
+
+</html>
+
+
+
+
+
+
