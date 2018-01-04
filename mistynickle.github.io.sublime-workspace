@@ -532,7 +532,25 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 1994,
+				"buffer_size": 820,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "DaFT-2018/proposal.html",
+			"settings":
+			{
+				"buffer_size": 20983,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "DaFT-2018/Misty Nickle - DaFT Proposal (2017-11-25).pdf",
+			"settings":
+			{
+				"buffer_size": 8940924,
+				"encoding": "Western (Windows 1252)",
 				"line_ending": "Unix"
 			}
 		}
@@ -578,7 +596,8 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/seph/Code/Web/mistynickle.github.io"
+		"/Users/seph/Code/Web/mistynickle.github.io",
+		"/Users/seph/Code/Web/mistynickle.github.io/DaFT-2018"
 	],
 	"file_history":
 	[
@@ -844,7 +863,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -874,7 +893,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -883,15 +902,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1994,
+						"buffer_size": 820,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1009,
-								1009
+								0,
+								0
 							]
 						],
 						"settings":
@@ -900,10 +919,67 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 826.0,
+						"translation.y": 22.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "DaFT-2018/proposal.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 20983,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								283,
+								283
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "DaFT-2018/Misty Nickle - DaFT Proposal (2017-11-25).pdf",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8940924,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -915,7 +991,7 @@
 	},
 	"input":
 	{
-		"height": 0.0
+		"height": 31.0
 	},
 	"layout":
 	{

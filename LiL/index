@@ -1,0 +1,665 @@
+<head>
+	<title>Lost in Living</title>
+
+	
+	
+	
+	
+</head>
+<body>
+
+<topbar>
+	Lost in Living
+	<links>
+		<a href="../lalal">View Collaborators</a>
+		<a href="">View Projects</a>
+	</links>
+</topbar>
+
+
+
+
+
+
+<style>
+gallery-container {
+	display: block;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+	gallery {
+		display: inline-block;
+		position: relative;
+		padding: 0px 15px 3px 15px;
+	}
+		gallery::before {
+			content: " ";
+			position: absolute;
+			left: 0px;
+			bottom: 0px;
+			width: 100%;
+			border-bottom: 15px solid black;
+	    border-left: 9px solid transparent;
+	    border-right: 9px solid transparent;
+	    opacity: 0.4;
+	    height: 0;
+		}
+
+		gallery a {
+			background-color: #111;
+			display: inline-block;
+			position: relative;
+			height: 50px;
+			width: 50px;
+			border: 2px solid black;
+			border-radius: 8px;
+			z-index: 2;
+			transition: all ease 0.2s;
+		}
+
+			gallery a.zoomed_pic {
+				border-color: #00ffab;
+				height: 55px;
+				width: 55px;
+			}
+
+			gallery a img {
+				height: 100%;
+				width: 100%;
+				border-radius: 8px;
+			}
+
+			gallery a desc {
+				display: none;
+				position: absolute;
+				white-space: nowrap;
+				top: 0px;
+				left: 50%;
+				background-color: #333;
+				color: #DDD;
+				border-radius: 5px;
+				padding: 5px;
+				transform: translate(-50%, -120%);
+				font-size: 12px;
+			}
+
+				gallery a desc::before {
+					content: " ";
+					background-color: inherit;
+					height: 10px;
+					width: 10px;
+					position: absolute;
+					bottom: 0px;
+					left: 50%;
+					transform: translate(-50%, 50%) rotate(45deg) ;
+				}
+
+				gallery a:hover desc {
+					display: block;
+				}
+
+			gallery a:hover {
+				cursor: zoom-in;
+				height: 55px;
+				width: 55px;
+			}
+
+				
+
+header-img {
+	background-color: #111;
+}
+
+
+header-img, header-img > img-wrap {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+	header-img > img-wrap {
+		background-size: cover;
+		background-position: center center;
+	}
+
+
+project > header > info {
+	display: block;
+	position: relative;
+	z-index: 5;
+}
+
+
+	project > info {
+		display: block;
+		border-top: 3px solid #c7f8ec;
+	}
+
+</style>
+
+
+<script type="text/javascript">
+	var $imgViewer;
+	var $currentLink;
+	document.addEventListener("DOMContentLoaded", function() {
+		if($imgViewer === undefined)
+			$imgViewer = document.getElementById("playwood_palace_big_image").childNodes[1];
+
+		var $gallery = document.getElementById("gallery");
+		if($currentLink === undefined)
+				$currentLink = $gallery.getElementsByClassName("zoomed_pic")[0];
+
+		console.log($currentLink);
+
+		var links = $gallery.getElementsByTagName("a");
+		for(var i = 0; i < links.length; i++) {
+			let link = links[i];
+			link.addEventListener("click", function(event) {
+				event.preventDefault();
+				$currentLink.classList.remove("zoomed_pic");
+				link.classList.add("zoomed_pic");
+				$currentLink = link;
+				$imgViewer.style.backgroundImage = `url("`+link.href+`")`;
+				return false;
+			});
+		}
+	});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<communities spawner="Communities">
+	
+
+<community-wrap spawn="" pvars="comm=Communities[i]">
+		<input class="see_more" id="see_more_texas_burn" autocomplete="off" type="checkbox">
+		<community id="texas_burn" pnvatts="1">
+			<header>
+				<img-area>
+					<img src="../public/images/logos/Flipside.png" pnvatts="2">
+				</img-area>
+				<info>
+					<h1><pnv var="comm.name">DaFT &amp; FaFT</pnv></h1>
+					<links spawner="comm.links">
+							
+					<a spawn="" href="https://www.burningflipside.com/" pnvatts="3"><pnv var="comm.links[i].text">BurningFlipside.com</pnv><br></a><a spawn="" href="http://www.freezerburn.org/" pnvatts="4"><pnv var="comm.links[i].text">FreezerBurn.org</pnv><br></a></links>
+					<small><pnv var="comm.date">2015 - Current</pnv></small><br>
+					<small><pnv var="comm.breif">Projects Made with the Build Teams for Texas Burning Man Regionals (Flipside &amp; Freezerburn).</pnv></small>
+				</info>
+			</header>
+			<projects spawner="comm.projects">
+				
+			<project spawn="" pvars="proj=comm.projects[i]" id="playwood_palace" pnvatts="5">
+					<header>
+						<header-img id="playwood_palace_big_image" pnvatts="6">
+							<img-wrap style="background-image: url('../public/images/photos/1200x1200/Playwood_Palace-Sunset_Booshers.png');" pnvatts="7"></img-wrap>
+						</header-img>
+						<info>
+							<date><pnv var="proj.date">Jan 2017 - Apr 2017</pnv></date>
+							<h1><pnv var="proj.name">Playwood Palace</pnv></h1>
+							<role>Role: <pnv var="proj.role">Designers and Build Leads</pnv></role>
+						</info>
+
+						<gallery-container>
+							<gallery id="gallery" spawner="proj.gallery.images">
+								
+							<a spawn="" class="" pvars="img=proj.gallery.images[i]" href="../public/images/photos/Playwood_Palace-by_Mystic_Loden.png" pnvatts="8">
+									<img src="../public/images/photos/100x100/Playwood_Palace-by_Mystic_Loden.png" pnvatts="9"><desc><pnv var="img.title">Glamor Shot</pnv></desc>
+								</a><a spawn="" class="" pvars="img=proj.gallery.images[i]" href="../public/images/photos/Playwood_Palace-Bebes_and_Fire.png" pnvatts="10">
+									<img src="../public/images/photos/100x100/Playwood_Palace-Bebes_and_Fire.png" pnvatts="11"><desc><pnv var="img.title">LiL and Fire</pnv></desc>
+								</a><a spawn="" class="" pvars="img=proj.gallery.images[i]" href="../public/images/photos/Playwood_Palace-Inner_Adults.png" pnvatts="12">
+									<img src="../public/images/photos/100x100/Playwood_Palace-Inner_Adults.png" pnvatts="13"><desc><pnv var="img.title">Inner Adults</pnv></desc>
+								</a><a spawn="" class="zoomed_pic" pvars="img=proj.gallery.images[i]" href="../public/images/photos/Playwood_Palace-Sunset_Booshers.png" pnvatts="14">
+									<img src="../public/images/photos/100x100/Playwood_Palace-Sunset_Booshers.png" pnvatts="15"><desc><pnv var="img.title">Sunset Booshers</pnv></desc>
+								</a><a spawn="" class="" pvars="img=proj.gallery.images[i]" href="../public/images/photos/Playwood_Palace-Forest.png" pnvatts="16">
+									<img src="../public/images/photos/100x100/Playwood_Palace-Forest.png" pnvatts="17"><desc><pnv var="img.title">The Forest</pnv></desc>
+								</a><a spawn="" class="" pvars="img=proj.gallery.images[i]" href="../public/images/photos/Playwood_Palace-Hobbit_Door.png" pnvatts="18">
+									<img src="../public/images/photos/100x100/Playwood_Palace-Hobbit_Door.png" pnvatts="19"><desc><pnv var="img.title">Hobbit Door</pnv></desc>
+								</a><a spawn="" class="" pvars="img=proj.gallery.images[i]" href="../public/images/photos/Playwood_Palace-Dustin_Boosh.png" pnvatts="20">
+									<img src="../public/images/photos/100x100/Playwood_Palace-Dustin_Boosh.png" pnvatts="21"><desc><pnv var="img.title">Dustin Boosh</pnv></desc>
+								</a><a spawn="" class="" pvars="img=proj.gallery.images[i]" href="../public/images/photos/Playwood_Palace-Rainbows_vs_Unicorns_Decal.png" pnvatts="22">
+									<img src="../public/images/photos/100x100/Playwood_Palace-Rainbows_vs_Unicorns_Decal.png" pnvatts="23"><desc><pnv var="img.title">Theme Shwag</pnv></desc>
+								</a><a spawn="" class="" pvars="img=proj.gallery.images[i]" href="../public/images/gifs/Playwood_Palace-Sunrise_Boosh.gif" pnvatts="24">
+									<img src="../public/images/gifs/Playwood_Palace-Sunrise_Boosh.gif" pnvatts="25"><desc><pnv var="img.title">Sunrise</pnv></desc>
+								</a><a spawn="" class="" pvars="img=proj.gallery.images[i]" href="../public/images/gifs/Playwood_Palace-Timelapse.gif" pnvatts="26">
+									<img src="../public/images/gifs/Playwood_Palace-Timelapse.gif" pnvatts="27"><desc><pnv var="img.title">Build Timelapse</pnv></desc>
+								</a></gallery>
+						</gallery-container>
+					</header>
+					<info>
+						<table>
+							<tbody spawner="proj.info">
+								
+							<tr spawn="" pvars="item=proj.info[i]"><td><pnv var="item.name">Description</pnv></td><td><pnv var="item.info">The Effigy for Flipside 2017.  A three story playground maze with flame throwers, a giant slide, and thematic rooms including a hobit hole, a ball pit in space, a secret treasure room, a bar/cafe, and a forest.</pnv></td></tr><tr spawn="" pvars="item=proj.info[i]"><td><pnv var="item.name">Members Involved</pnv></td><td><pnv var="item.info">Misty Nickle (Design &amp; Creative Director), Seph Reed (Design &amp; Foreman)</pnv></td></tr><tr spawn="" pvars="item=proj.info[i]"><td><pnv var="item.name">Project Website</pnv></td><td><pnv var="item.info"><a href="http://sephreed.github.io/Playwood_Palace/">http://sephreed.github.io/Playwood_Palace/</a></pnv></td></tr></tbody>
+						</table>
+					</info>
+				</project></projects>
+		</community>
+	</community-wrap></communities>
+
+
+
+<!-- 
+<input class="see_more" type="checkbox" id="see_more_texas_burn" autocomplete="off">
+<community>
+	<header>
+		<img-area>
+			<img src="../public/images/logos/Flipside.png">
+		</img-area>
+		<info>
+			<h1>DaFT &amp; FaFT</h1>
+			<links>
+					<a href="https://www.burningflipside.com/">BurningFlipside.com</a><br>
+					<a href="http://www.freezerburn.org/">FreezerBurn.org</a>
+			</links>
+			<small>2015 - Current</small><br>
+			<small>Projects Made with the Build Teams for Texas Burning Man Regionals (Flipside &amp; Freezerburn).</small>
+		</info>
+	</header>
+
+	<project>
+		<header style="color: white;">
+			<header-img id="playwood_palace_big_image">
+				<img-wrap style="background-image: url('../public/images/photos/Playwood_Palace-Sunset_Booshers.png');">
+				</img-wrap>
+			</header-img>
+			<info>
+				<date>Jan 2017 - Apr 2017</date>
+				<h1>Playwood Palace</h1>
+				<role>Role: Designers and Build Leads</role>
+			</info>
+
+			<gallery-container>
+
+				<gallery id="gallery">
+					<a href="../public/images/photos/Playwood_Palace-by_Mystic_Loden.png"><img src="../public/images/photos/100x100/Playwood_Palace-by_Mystic_Loden.png"><desc>Glamor Shot</desc></a>
+
+					<a href="../public/images/photos/Playwood_Palace-Bebes_and_Fire.png"><img src="../public/images/photos/100x100/Playwood_Palace-Bebes_and_Fire.png"><desc>LiL and Fire</desc></a>
+
+					<a href="../public/images/photos/Playwood_Palace-Inner_Adults.png"><img src="../public/images/photos/100x100/Playwood_Palace-Inner_Adults.png"><desc>Inner Adults</desc></a>
+
+					<a class="zoomed_pic" href="../public/images/photos/Playwood_Palace-Sunset_Booshers.png"><img src="../public/images/photos/100x100/Playwood_Palace-Sunset_Booshers.png"><desc>Sunset Booshers</desc></a>
+
+					<a href="../public/images/photos/Playwood_Palace-Forest.png"><img src="../public/images/photos/100x100/Playwood_Palace-Forest.png"><desc>The Forest</desc></a>
+
+					<a href="../public/images/photos/Playwood_Palace-Hobbit_Door.png"><img src="../public/images/photos/100x100/Playwood_Palace-Hobbit_Door.png"><desc>Hobbit Door</desc></a>
+
+					<a href="../public/images/photos/Playwood_Palace-Dustin_Boosh.png"><img src="../public/images/photos/100x100/Playwood_Palace-Dustin_Boosh.png"><desc>Dustin Boosh</desc></a>
+
+					<a href="../public/images/photos/Playwood_Palace-Rainbows_vs_Unicorns_Decal.png"><img src="../public/images/photos/100x100/Playwood_Palace-Rainbows_vs_Unicorns_Decal.png"><desc>Theme Shwag</desc></a>
+
+					<a href="../public/images/gifs/Playwood_Palace-Sunrise_Boosh.gif"><img src="../public/images/gifs/Playwood_Palace-Sunrise_Boosh.gif"><desc>Sunrise</desc></a>
+
+					<a href="../public/images/gifs/Playwood_Palace-Timelapse.gif"><img src="../public/images/gifs/Playwood_Palace-Timelapse.gif"><desc>Build Timelapse</desc></a>
+				</gallery>
+			</gallery-container>
+		</header>
+		<info>
+			<table>
+				<tr><td>Description:</td><td>The Effigy for Flipside 2017.  A three story playground maze with flame throwers, a giant slide, and thematic rooms including a hobit hole, a ball pit in space, a secret treasure room, a bar/cafe, and a forest.</td></tr>
+				<tr><td>Members Involved:</td><td>Misty Nickle (Design &amp; Creative Director), Seph Reed (Design &amp; Foreman)</td></tr>
+				<tr><td>Project Website:</td><td><a href="http://sephreed.github.io/Playwood_Palace/">http://sephreed.github.io/Playwood_Palace/</a></td></tr>
+				</td></tr>
+			</table>
+		</info>
+	</project>
+
+	<project>
+		<header style="background-image: url('../public/images/photos/Pine_Cononagon_Big.png')">
+			<date>Jan 2018 - Current</date>
+			<h1>Pine Cononagon</h1>
+			<role>Role: Designers and Build Leads</role>
+		</header>
+
+		<see-more>
+			<label class="see_more" for="see_more_texas_burn">Click to See More Projects (1 Hidden)</label>
+		</see-more>
+	</project>
+
+
+	<project class="see_less">
+		<header>
+			The Vessel<br>
+			<small>2017</small>
+			<img src="../public/images/gifs/playwood_palace_timelapse.gif"><br>
+		</header>
+	</project>
+
+	<label class="see_less" for="see_more_texas_burn">Click to See Less Projects (Hide 1)</label>
+</community> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+
+<input class="see_more" type="checkbox" id="see_more_iron_monkeys" autocomplete="off">
+<community>
+	<header>
+		<img-area>
+			<img src="../public/images/logos/Iron_Monkeys(small_patch).png">
+		</img-area>
+		<info>
+			<h1>Iron Monkeys</h1>
+			<links>
+					<a href="https://www.burningflipside.com/">BurningFlipside.com</a><br>
+					<a href="http://www.freezerburn.org/">FreezerBurn.org</a>
+			</links>
+			<small>2015 - Current</small><br>
+			<small>Texas Burning Man Regionals.</small>
+			
+
+		</info>
+	</header>
+
+	<project>
+		<header>
+			Playwood Palace<br>
+			<small>2017</small>
+			<img src="../public/images/gifs/playwood_palace_timelapse.gif"><br>
+		</header>
+	</project>
+
+	<project>
+		<header>
+			The Vessel<br>
+			<small>2017</small>
+			<img src="../public/images/gifs/playwood_palace_timelapse.gif"><br>
+		</header>
+		<see-more>
+			<label class="see_more" for="see_more_iron_monkeys">Click to See More Projects (1 Hidden)</label>
+		</see-more>
+	</project>
+
+
+	<project class="see_less">
+		<header>
+			The Vessel<br>
+			<small>2017</small>
+			<img src="../public/images/gifs/playwood_palace_timelapse.gif"><br>
+		</header>
+	</project>
+
+	<label class="see_less" for="see_more_iron_monkeys">Click to See Less Projects (Hide 1)</label>
+</community>
+
+
+
+
+
+ -->
+
+ 
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<center style="opacity: 0.2"><small>Thank you!</small></center>
+
+
+<style>
+html, body {
+	box-sizing: border-box;
+	min-height: 100vh;
+	min-width: 100vw;
+}
+
+html, body, h1 {
+	margin: 0px;
+	padding: 0px;
+}
+
+*, *::after, *::before {
+	box-sizing: inherit;
+}
+
+
+header {
+	display: block;
+}
+
+
+body {
+	font-family: arial;
+	padding-top: 30px;
+	color: #333;
+	background-color: #222;
+}
+
+	topbar {
+		color: white;
+		display: block;
+		position: fixed;
+		top: 0px;
+		width: 100vw;
+		height: 25px;
+		/*background-color: #268;*/
+		background-image: linear-gradient(rgba(0,250,250,0.9), rgba(0, 175, 250, 0.9));
+		z-index: 100;
+		box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+	}
+		topbar > links {
+			display: block;
+			position: absolute;
+			right: 0px;
+			top: 0px;
+		}
+
+
+
+
+	input.see_more {
+		display: none;
+	}
+
+	community {
+		position: relative;
+		display: inline-block;
+		background-color: white;
+
+		/*border: 1px solid black;*/
+		border-radius: 3px;
+		/*max-width: 800px;*/
+		width: 90%;
+		margin-left: 5%;
+		margin-top: 30px;
+		margin-bottom: 100px;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);  
+		overflow: hidden;
+	}
+
+		community > header {
+			display: flex;
+			flex-direction: row;
+			padding: 10px;
+			background-color: #21b7f8;
+			border-bottom: 3px solid #189dd7;
+		}
+			community > header > img-area {
+				flex-grow: 0;
+				width: 100px;
+			}
+				community > header > img-area > img {
+					width: 100%;
+					border: 3px solid black;
+					box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+					border-radius: 500px;
+				}
+
+			community > header > info {
+				flex-grow: 1;
+				display: inline-block;
+				font-weight: bold;
+				padding-left: 10px;
+				vertical-align: top;
+			}
+				community > header > info > h1 {
+					color: white;
+					text-shadow: 1px 1px #333, -1px -1px #333, -1px 1px #333, 1px -1px #333;
+				}
+
+				community > header > info > links {
+					display: inline-block;
+					float: right;
+					font-size: 11px;
+				}
+
+					community > header > info > links > a {
+						text-decoration: none;
+						color: white;
+					}
+
+						community > header > info > links > a:hover {
+							text-decoration: underline;
+							/*color: #599;*/
+						}
+
+
+		project {
+			display: block;
+			position: relative;
+			border-bottom: 3px solid rgb(23, 156, 214);
+		}
+			project:nth-child(2n){
+				background-color: rgba(0,0,0,0.03);
+			} 
+
+
+			project header {
+				position: relative;
+				padding: 10px;
+				background-color: #D5FAF1;
+				height: 80vh;
+				background-position: center center;
+				background-size: cover;
+			}
+
+				project header role, project header date {
+					font-size: 13.5px;
+				}
+
+				project header date {
+					float: right;
+				}
+
+				project header h1{
+					/*display: inline-block;*/
+					font-size: 24px;
+				}
+
+			project > img-area {
+				display: block;
+				text-align: center;
+				height: 300px;
+				margin: 5px 0px 10px 0px;
+				padding: 10px;
+			}
+				project > img-area img {
+					position: relative;
+					display: inline-block;
+					max-width: 100%;
+					max-height: 100%;
+					border-radius: 5px;
+					border: 1px ridge rgba(0,0,0,0.4);
+				}
+
+					img-area > a:hover  {
+						cursor: zoom-in;
+					}
+
+
+			project table {
+				border-collapse: collapse;
+				margin: 10px;
+			}
+
+				project table td {
+					vertical-align: top;
+					padding: 5px 0px 10px 0px;
+				}
+					project table td:first-child {
+						font-weight: bold;
+					}
+
+					project table td:not(:first-child) {
+						padding-left: 10px;
+					}
+
+				project table tr:not(:last-child) {
+					border-bottom: 1px solid rgba(0,0,0,0.2);	
+				}
+
+		community see-more {
+			display: block;
+			position: absolute;
+			bottom: 0px;
+			height: 180px;
+			width: 100%;
+			z-index: 10;
+
+			padding: 10px;
+			padding-top: 140px;
+
+			text-align: center;
+
+			background-image: linear-gradient(transparent, white 80%);
+		}
+
+			label.see_more:hover, label.see_less:hover {
+				color: #0AF;
+				text-decoration: underline;
+				text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+				cursor: pointer;
+			}
+
+			community > extra-projects {
+				display: none;
+			}
+
+				community .see_less {
+					display: none;
+				}
+
+				community label.see_less {
+					text-align: center;
+					padding: 10px;
+				}
+			
+				input:checked + community > .see_less {
+					display: block;
+				}
+
+				input:checked + community see-more {
+					display: none;
+				}
+
+
+
+
+</style>
+</body>
