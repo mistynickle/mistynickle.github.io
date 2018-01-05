@@ -16,7 +16,7 @@ var Communities = [
 				id: "playwood_palace",
 				name: "Playwood Palace",
 				date: "Jan 2017 - Apr 2017",
-				role: "Designers and Build Leads",
+				role: "Lead Designers and Build Leads",
 				gallery: {
 					startIndex: 3,
 					images: [
@@ -40,8 +40,13 @@ var Communities = [
 						info: "Misty Nickle (Design &amp; Creative Director), Seph Reed (Design &amp; Foreman)" 
 					},
 					{	name: "Project Website",
-						info: `<a href="http://sephreed.github.io/Playwood_Palace/">sephreed.github.io/Playwood_Palace/</a>`
+						info: `<a href="http://sephreed.github.io/Playwood_Palace/" target="_blank">sephreed.github.io/Playwood_Palace/</a>`
 					},
+					{	name: "Video Walkthrough",
+						info: `<a href="https://www.youtube.com/watch?v=rzSUhlV1V5g/" target="_blank">www.youtube.com/watch?v=rzSUhlV1V5g</a>`
+					},
+
+					
 				]
 			},
 
@@ -49,7 +54,7 @@ var Communities = [
 				id: "pine_cononagon",
 				name: "Pine Cononagon",
 				date: "Jan 2018 - Current",
-				role: "Designers and Build Leads",
+				role: "Lead Designers and Build Leads",
 				gallery: {
 					startIndex: 2,
 					images: [
@@ -69,7 +74,7 @@ var Communities = [
 						info: "Misty Nickle (Design &amp; Creative Director), Seph Reed (Design &amp; Foreman)" 
 					},
 					{	name: "Project Website",
-						info: `<a href="http://mistynickle.github.io/DaFT-2018/proposal.html">mistynickle.github.io/DaFT-2018/proposal.html</a>`
+						info: `<a href="http://mistynickle.github.io/DaFT-2018/proposal.html" target="_blank">mistynickle.github.io/DaFT-2018/proposal.html</a>`
 					},
 				]
 			}
@@ -89,6 +94,71 @@ var Communities = [
 		],
 
 		projects: []
+	},
+
+	{
+		id: "vision_gland",
+		name: "Vision Gland",
+		date: "2016",
+		logo: "../../public/images/logos/Vision_Gland(small_patch).png",
+		breif: "Meow Wolf Inspired, Immersive/Experiential Art Collective in Austin TX",
+
+		links: [
+			{ href:"http://www.visiongland.com/", text:"VisionGland.com"}
+		],
+
+		projects: [
+			{
+				id: "space_crawl",
+				name: "The Vessel - Space Crawl",
+				date: "Sep 2016 - Jan 2017",
+				role: "Designers/Builders",
+				gallery: {
+					startIndex: 1,
+					images: [
+						{ title: "Normal Portrait", href: "The_Vessel-Space_Portrait.png", doContain: true },
+						{ title: "Enter Space", href: "The_Vessel-Enter_Space.gif", doContain: true },
+						{ title: "Normal Portrait", href: "The_Vessel-Spacecrawl_Layout.png", doContain: true },
+						{ title: "Normal Portrait", href: "The_Vessel-Building_Space.png" },
+						{ title: "Normal Portrait", href: "The_Vessel-Enter_Escape_Pod.png" },
+						{ title: "Normal Portrait", href: "The_Vessel-Escape_Pod.png", doContain: true },
+						{ title: "Normal Portrait", href: "The_Vessel-Down_the_Slide.png", doContain: true },
+						{ title: "Normal Portrait", href: "The_Vessel-Alan_out_Slide.png" },
+					],
+				},
+				info: [
+					{	name: "Description",
+						info: `Our corner of Vision Glands "The Vessel", a false wall hidden behind a portrait of space which could be climbed up and into.  On the other side was a space tunnel, and secret silver room, culminating with a slide into a ball pit.`
+					},
+					{	name: "Members Involved",
+						info: "Misty Nickle (Design, Funding, &amp; Creative Director), Seph Reed (Design &amp; Foreman)" 
+					},
+				]
+			},
+			{
+				id: "the_vessel",
+				name: "The Vessel",
+				date: "Sep 2016 - Jan 2017",
+				role: "Co-designers and (unofficial) Foreman",
+				gallery: {
+					startIndex: 0,
+					images: [
+						{ title: "Normal Portrait", href: "The_Vessel-Space_Portrait.png", doContain: true },
+					],
+				},
+				info: [
+					{	name: "Description",
+						info: `Our corner of Vision Glands "The Vessel", a false wall hidden behind a portrait of space which could be climbed up and into.  On the other side was a space tunnel, and secret silver room, culminating with a slide into a ball pit.`
+					},
+					{	name: "Members Involved",
+						info: "Misty Nickle (Design, Funding, &amp; Creative Director), Seph Reed (Design &amp; Foreman)" 
+					},
+					// {	name: "Project Website",
+					// 	info: `<a href="http://mistynickle.github.io/DaFT-2018/proposal.html">mistynickle.github.io/DaFT-2018/proposal.html</a>`
+					// },
+				]
+			}
+		]
 	}
 ]
 
@@ -114,6 +184,7 @@ Communities.forEach((comm) => {
 			}
 		});
 		proj.gallery.startImage = proj.gallery.images[proj.gallery.startIndex].largeHref;
+		proj.gallery.containStartImage = proj.gallery.images[proj.gallery.startIndex].doContain;
 		proj.gallery.images[proj.gallery.startIndex].isSelected = true;
 
 	});

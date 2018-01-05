@@ -2,6 +2,7 @@ var Gallery = {
 	startIndex: 1,
 	images: [
 		{ title: "Pine Cononagon", href: "Pine_Cononagon-Render_Glamor.png" },
+		{ title: "Blacklightboard", href: "Playwood_Palace-Blackboard.png" },
 		{ title: "Playwood Palace", href: "Playwood_Palace-by_Mystic_Loden.png" },
 		{ title: "Inner Adults", href: "Playwood_Palace-Inner_Adults.png" },
 	],

@@ -49,7 +49,9 @@
 				<project spawn pvars="proj=comm.projects[i]" id="{{proj.id}}">
 					<header>
 						<header-img>
-							<img-wrap id="{{proj.id}}_big_image" style="background-image: url('{{proj.gallery.startImage}}');"></img-wrap>
+							<img-wrap 
+							id="{{proj.id}}_big_image" 
+							style="background-image: url('{{proj.gallery.startImage}}');   background-size: {{? proj.gallery.containStartImage : 'contain' : 'cover'}};"></img-wrap>
 						</header-img>
 						<brief>
 							<date>{{proj.date}}</date>
@@ -63,6 +65,7 @@
 									class="{{? img.isSelected : 'zoomed_pic'}}"
 									pvars="img=proj.gallery.images[i]" 
 									href="{{img.fullHref}}"
+									doContain="{{img.doContain}}"
 									style="background-image: url('{{img.tinyHref}}');"
 									>
 									<img src="{{img.fullHref}}"><desc>{{img.title}}</desc>

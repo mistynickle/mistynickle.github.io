@@ -5,7 +5,6 @@ function initGalleries() {
 	for(var g = 0; g < $galleries.length; g++) {
 		let $gallery = $galleries[g];
 		let $currentLink = $gallery.getElementsByClassName("zoomed_pic")[0];
-		// let $currentIndex = $currentLink.getAttribute("indexPos");
 		let $imgViewer = document.getElementById($gallery.getAttribute("target"));
 		let $lastDisplayWith;
 
@@ -56,8 +55,12 @@ function initGalleries() {
 			$currentLink.classList.remove("zoomed_pic");
 			$link.classList.add("zoomed_pic");
 			$currentLink = $link;
-			$currentIndex = $currentLink.getAttribute("indexPos");
 			$imgViewer.style.backgroundImage = `url("`+$link.href+`")`;
+
+			if($link.getAttribute("doContain") == "true")
+				$imgViewer.style.backgroundSize = "contain";
+			else
+				$imgViewer.style.backgroundSize = "";
 		}
 
 		let links = $gallery.getElementsByTagName("a");
