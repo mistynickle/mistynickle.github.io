@@ -93,7 +93,37 @@ var Communities = [
 			{ href:"http://www.ironmonkeyarts.org/", text:"IronMonkeyArts.org"}
 		],
 
-		projects: []
+		projects: [
+			{
+				id: "various_monkey_projects",
+				name: "Burning Man Art Projects",
+				date: "2009-2016",
+				role: "Tool Flinger",
+				gallery: {
+					startIndex: 8,
+					images: [
+						{ title: "Piazza Di Ferro", href: "Iron_Monkeys-Piazza_Di_Ferro.png" },
+						{ title: "Agora of Light", href: "Iron_Monkeys-Agora_of_Light.png", doContain: true },
+						{ title: "The Guardian of Dawn", href: "Iron_Monkeys-Guardian_at_Dawn.png" },
+						{ title: "The Guardian of Dawn", href: "Iron_Monkeys-The_Guardian_of_Dawn(at_dawn).png", doContain: true },
+						{ title: "The Guardian of Dawn", href: "Iron_Monkeys-The_Guardian_of_Dawn(at_night).png" },
+						{ title: "Garden of Monkey Retrospectus", href: "Iron_Monkeys-Garden_of_Monkey_Retrospectus.png" },
+						{ title: "Group Shot", href: "Iron_Monkeys-Group_Shot.png" },
+						{ title: "The Crossroads", href: "Iron_Monkeys-The_Crossroads(at_night).png" },
+						{ title: "The Crossroads", href: "Iron_Monkeys-The_Crossroads.png" },
+						{ title: "Incunabulum", href: "Iron_Monkeys-Incunabulum.png", doContain: true },
+					],
+				},
+				info: [
+					{	name: "Description",
+						info: "" 
+					},
+					{	name: "Members Involved",
+						info: "Misty Nickle (Tool Flinger and Build Crew), Seph Reed (Build Crew 2016)" 
+					},
+				]
+			}
+		]
 	},
 
 	{
@@ -148,10 +178,10 @@ var Communities = [
 				},
 				info: [
 					{	name: "Description",
-						info: `Our corner of Vision Glands "The Vessel", a false wall hidden behind a portrait of space which could be climbed up and into.  On the other side was a space tunnel, and secret silver room, culminating with a slide into a ball pit.`
+						info: `A multi room, multi dimensional adventure into another world made entirely out of things others might call garbage.  It was a small maze of interest with secret rooms, interactive art, a ball pit, and many other odd bits.`
 					},
 					{	name: "Members Involved",
-						info: "Misty Nickle (Design, Funding, &amp; Creative Director), Seph Reed (Design &amp; Foreman)" 
+						info: "Misty Nickle (Co-designer), Seph Reed (Co-designer &amp; Foreman)" 
 					},
 					// {	name: "Project Website",
 					// 	info: `<a href="http://mistynickle.github.io/DaFT-2018/proposal.html">mistynickle.github.io/DaFT-2018/proposal.html</a>`
