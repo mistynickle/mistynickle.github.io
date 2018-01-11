@@ -87,7 +87,7 @@ var Communities = [
 		name: "Iron Monkeys",
 		date: "2009-2016",
 		logo: "../../public/images/logos/Iron_Monkeys(small_patch).png",
-		breif: "Seattle Based Metal Working Collective ... stuff with BM",
+		breif: "Seattle Based Metal Working Collective",
 
 		links: [
 			{ href:"http://www.ironmonkeyarts.org/", text:"IronMonkeyArts.org"}
@@ -116,11 +116,16 @@ var Communities = [
 				},
 				info: [
 					{	name: "Description",
-						info: "" 
+						info: "Metal art working collective from Seattle WA which has been bringing large metal art out to Burning Man for years.  Everything is hand made and blacksmithed." 
 					},
 					{	name: "Members Involved",
 						info: "Misty Nickle (Tool Flinger and Build Crew), Seph Reed (Build Crew 2016)" 
 					},
+					{	name: "More Images",
+						info: "<a href='http://www.ironmonkeyarts.org/gallery.html'>IronMonkeyArts.org/Gallery.html</a>" 
+					},
+
+					
 				]
 			}
 		]
@@ -171,9 +176,15 @@ var Communities = [
 				date: "Sep 2016 - Jan 2017",
 				role: "Co-designers and (unofficial) Foreman",
 				gallery: {
-					startIndex: 0,
+					startIndex: 2,
 					images: [
-						{ title: "Normal Portrait", href: "The_Vessel-Space_Portrait.png", doContain: true },
+						{ title: "", href: "The_Vessel-Brain_Room.png", doContain: true },
+						{ title: "", href: "The_Vessel-Hidden_Side_Hall.png", doContain: true },
+						{ title: "", href: "The_Vessel-Human_Pacification_Room.png" },
+						{ title: "", href: "The_Vessel-Into_Space_Crawl.png" },
+						{ title: "", href: "The_Vessel-Stretchy_Frames.png" },
+						{ title: "", href: "The_Vessel-TV_Room.png" },
+						{ title: "", href: "The_Vessel-Map.png", doContain: true },
 					],
 				},
 				info: [
