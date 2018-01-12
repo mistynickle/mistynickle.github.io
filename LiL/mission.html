@@ -1,7 +1,6 @@
 <head>
-	<title>LiL - Mission</title>
+	<title>Lost in Living</title>
 	
-	<!-- <script type="text/javascript" src="members.js" NoFreeze></script> -->
 	
 	
 	
@@ -23,37 +22,128 @@
 <view src="topbar.html"><topbar>
 	<a id="root_link" href="index.html">Lost in Living</a>
 	<links>
-		<a id="view_members" href="members.html">Our Members
+		<a id="view_members" href="members.html" class="current_page">Our Members
 		</a><a id="view_projects" href="projects.html">See Projects (as)
 		
-		</a><a id="view_mission" href="mission.html" class="current_page">The Mission
+		</a><a id="view_mission" href="mission.html">The Mission
 		</a>
 	</links>
 </topbar></view>
 
 
-<mission>
-	<h2>Our Mission</h2>
-	is to create experiences which incite playfulness and the sense of being cared for and welcome.
-</mission>
 
+<maincontent>
+	<memebers spawner="Members">
+		
+	<member spawn="" pvars="memb=Members[i]">
+			<h2><pnv var="memb.name">Misty Nickle</pnv></h2>
+			<img-area style="background-image: url('../public/images/Sophie_Misty.jpeg')">
+				<img src="../public/images/Sophie_Misty.jpeg" pnvatts="1">
+			</img-area>
+			<blurb> 
+				<table>
+					<tbody spawner="memb.info">
+						
+					<tr spawn="" pvars="item=memb.info[i]"><td><pnv var="item.name">Bio</pnv></td><td><pnv var="item.data">Awesome Person</pnv></td></tr><tr spawn="" pvars="item=memb.info[i]"><td><pnv var="item.name">Portfolio</pnv></td><td><pnv var="item.data"><a href="https://mistynickle.github.io/index.html">MistyNickle.github.io</a></pnv></td></tr><tr spawn="" pvars="item=memb.info[i]"><td><pnv var="item.name">Hails From</pnv></td><td><pnv var="item.data">Seattle WA -&gt; L.A. CA -&gt; Austin TX</pnv></td></tr></tbody>
+				</table>
+			</blurb>
+		</member><member spawn="" pvars="memb=Members[i]">
+			<h2><pnv var="memb.name">Seph Reed</pnv></h2>
+			<img-area style="background-image: url('../public/images/photos/Seph.jpg')" pnvatts="2">
+				<img src="../public/images/photos/Seph.jpg" pnvatts="3">
+			</img-area>
+			<blurb> 
+				<table>
+					<tbody spawner="memb.info">
+						
+					<tr spawn="" pvars="item=memb.info[i]"><td><pnv var="item.name">Quote</pnv></td><td><pnv var="item.data">Everything is a Paradox</pnv></td></tr><tr spawn="" pvars="item=memb.info[i]"><td><pnv var="item.name">Bio</pnv></td><td><pnv var="item.data">Builder, Coder</pnv></td></tr><tr spawn="" pvars="item=memb.info[i]"><td><pnv var="item.name">Portfolio</pnv></td><td><pnv var="item.data"><a href="https://sephreed.github.io/portfolio/index.html">SephReed.github.io/portfolio/</a></pnv></td></tr><tr spawn="" pvars="item=memb.info[i]"><td><pnv var="item.name">Hails From</pnv></td><td><pnv var="item.data">Santa Cruz CA -&gt; Portland OR -&gt; Austin TX</pnv></td></tr></tbody>
+				</table>
+			</blurb>
+		</member></memebers>
+</maincontent>
 
 
 <style>
-mission {
+member {
 	display: block;
+	position: relative;
 	background-color: #f7f3dc;
-	/*width: 80vw;*/
-	margin: 10%;
-	transform: rotate(1deg);
-	padding: 20px;
+	margin: 20px 5%;
 	border-radius: 2px;
+	border-top-left-radius: 80px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);  
+	overflow: hidden;
+	min-height: 175px;
 }
-	mission > h2 {
-		display: inline-block;
+
+	member h2 {
+		position: absolute;
+		padding: 10px;
+		padding-left: 165px;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		background-color: #f89021;
+		text-shadow: 1px 1px #333, -1px -1px #333, -1px 1px #333, 1px -1px #333;
+		color: white;
 		margin: 0px;
+		border-bottom: 3px solid rgb(222, 118, 7);
 	}
+
+
+
+		member img-area {
+			display: block;
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			z-index: 2;
+			flex-grow: 0;
+			height: 150px;
+			width: 150px;
+			margin: 10px;
+			border: 3px solid #333;
+			border-radius: 1000px;
+			background-size: cover;
+			background-position: center center;
+			box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+		}
+
+			member img-area img {
+				opacity: 0;
+				height: 100%;
+				width: 100%;
+			}
+
+		member blurb {
+			display: block;
+			padding-left: 180px;
+			margin-top: 57px;
+			border-top: 3px solid #c7f8ec;
+		}
+
+			blurb table {
+				border-collapse: collapse;
+				/*margin: 10px;*/
+			}
+
+				blurb table td {
+					vertical-align: top;
+					padding: 5px 0px 10px 0px;
+				}
+					blurb table td:first-child {
+						font-weight: bold;
+					}
+
+					blurb table td:not(:first-child) {
+						padding-left: 20px;
+					}
+
+				blurb table tr:not(:last-child) {
+					border-bottom: 1px solid rgba(0,0,0,0.2);	
+				}
 </style>
+
 
 
 
